@@ -1,0 +1,24 @@
+---
+title: "ecology-in-cities"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+d-title, d-byline {
+  display: none
+}
+</style>
+
+<br>
+
+````{r, fig.align = "center", out.width = "60%"}
+knitr::include_graphics("images/projects/nature_boardwalk.jpeg")
+```
+
+# Ecological Processes in Urban Ecosystems
+
+Ecological processes continue to operate within densely built, urban landscapes. However, urban ecosystems have unique characteristic compared to their more rural counterparts. Therefore, ecological theories and principles derived from more natural ecosystems may not be generalizable in urban environments. Through our research we hope to better understand fundamental ecological processes in urban ecosystems (e.g., species distribution functioning, species-habitat relationships, and population and community dynamics). In this space we work on applied projects such as metacommunity and metapopulation dynamics, scale dependent species-habitat relationships, novel fear and risk dynamics, and spatial planning and prioritization of green infrastructure in cities.

@@ -1,0 +1,24 @@
+---
+title: "animal-behavior"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+d-title, d-byline {
+  display: none
+}
+</style>
+
+<br>
+
+````{r, fig.align = "center", out.width = "60%"}
+knitr::include_graphics("images/projects/coyote_chicago_cemetery.jpeg")
+```
+
+# Behavioral adaptation of urban species
+
+While cities are not typically built with wild flora and fauna in mind, they do contain important habitats and some wildlife species are adapting and persisting in urban ecosystems. Understanding how species adapt to these urban environments is an important endeavors to enhance coexistence and conserve species. In an effort to understand how species adapt to urban environments, we are assessing boldness and exploratory behaviors in urban coyotes and raccoons using a novel object study design. The information generated from this project will inform management decisions pertaining to human-wildlife coexistence.

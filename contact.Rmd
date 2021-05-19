@@ -1,0 +1,28 @@
+---
+title: "Join the Lab"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+d-title, d-byline {
+  display: none
+}
+</style>
+
+<br>
+
+## Prospective graduate students:
+
+I currently do not have funding for new students in our lab. However, if you are interested in our lab and would like me to have your materials and contact information on file, please send the following in a single pdf:
+
+- **Letter of interest**
+- **CV (education, publications, awards, GRE scores)**
+- **Contact information for three references**
+
+## Prospective Mason undergrads:
+
+I am always willing to work with eager and motivated undergraduate researchers. If you are interested in applying to the OSCAR Summer Scholar program or you qualify for the OSCAR work-study research assistantship please send me a note with your research interest and any potential project ideas.

@@ -1,0 +1,24 @@
+---
+title: "UWIN"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+d-title, d-byline {
+  display: none
+}
+</style>
+
+<br>
+
+````{r, fig.align = "center", out.width = "60%"}
+knitr::include_graphics("images/projects/dc_buildings.png")
+```
+
+# Capital Area UWIN
+
+We are fortunate to work closely with colleagues across 25 cities through a multi-city urban biodiversity monitoring network called the Urban Wildlife Information Network (UWIN). We run a long-term array of study sites across the Washington, D.C. region. Together with other UWIN partners we have amassed the world’s largest urban wildlife dataset. This network and study design is not taxa specific and facilitates long-term cross-institution collaborations. Datasets at this temporal and spatial scale allow us to study a diverse set of novel and challenging urban ecology topics, such as metapopulation and metacommunity dynamics, human-wildlife interactions, and habitat connectivity.

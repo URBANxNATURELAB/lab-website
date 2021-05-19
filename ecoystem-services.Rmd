@@ -1,0 +1,26 @@
+---
+title: "ecoystem-services"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+d-title, d-byline {
+  display: none
+}
+</style>
+
+<br>
+
+<center>
+
+![Photo by the District’s Urban Forestry Division](images/projects/dc-street-trees-map.jpeg){width=60%}
+
+</center>
+
+# Spatial distribution of ecoystem services
+
+Ecosystem services are the direct or indirecet benefits that wildlife or ecosystems provide to people. Examples include crop pollination by bees, air purification and cooling by urban trees, space to engage in physical activity, or pleasure that we get from birdwatching in our neighborhood park. But who gets to benifit from these services? Is the spatial distribution of ecoystem services, and thus access to these services, equal and just? We are particularly interested in how ecosystem services are distributed across cities. Our current project is looking at the spatial distribution of ecosystem services provided by public street trees in Washington, D.C.
