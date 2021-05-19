@@ -128,12 +128,12 @@ d-title, d-byline {
 
 <div>
 <br>
-<img src="images/people/tristan.jpeg" width="300px">
+<img src="images/people/tristan_new.jpg" width="300px">
 </div>
 
 <div>
 <h3>Tristan Silva-Montoya, Research Assistant</h3>
-<p>I am a freshman at GMU majoring in Environmental Science, planning to choose a concentration in wildlife. I have always been drawn to animals and studying them, and have a strong interest in herpetology. The reason I love herpetology is that I have always had reptiles as pets growing up starting with Leopard Geckos and turtles, then getting a chameleon, and finally getting a Nile monitor! My monitors name is Zabuza and I love studying how he reacts to me and everything else (he studies me back, I swear). I hope to make a career on caring for or studying the behavior of reptiles and amphibians alike.</p>
+<p>I'm an undergraduate student here at George Mason studying Environmental Science. I plan to concentrate in Wildlife, specifically herpetology. I have a strong passion for all wildlife that started when I was young and would go camping with my parents. Since that passion started I've always had pets in the house starting from geckos and turtles to chameleons and monitors along with the dogs of course. Growing up around a lot of animals really makes you curious about the intelligence and personality of those animals, hence my future goal of working in wildlife conservation or beneficial captive facilities used for breeding and awareness. I am more than excited for the opportunity of gaining experience and working towards something bigger than myself.</p>
 </div>
 
 <div>
