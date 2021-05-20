@@ -62,4 +62,15 @@ d-title, d-byline {
 </a>
 </div>
 
+<div>
+<a href = urban-landscape-ecology.html>
+<div class="polaroid">
+<img src="images/projects/landscape-ecology.jpeg" alt="DC Streets" style="width:100%">
+<div class="container">
+<h4>Urban Landscape Ecology</h4>
+</div>
+</div>
+</a>
+</div>
+
 </div>
