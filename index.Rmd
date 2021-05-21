@@ -21,7 +21,7 @@ knitr::include_graphics("images/lab_logo_circle_teal_small.png")
 
 We are a conservation science lab in the [Department of Environmental Science and Policy](https://science.gmu.edu/academics/departments-units/environmental-science-policy) at [George Mason University](https://www2.gmu.edu/). Our lab envisions cities where nature and people thrive together. Our mission is to undertake scientific research that supports ecological and conservation-minded urban design, planning, and policy. We use theories and principles in ecology and conservation science to provide evidence-based solutions that simultaneously conserve biological diversity and improve the lives of urban residents.
 
-## Recent Lab News
+<h2>Recent Lab News</h2>
   
 
 
