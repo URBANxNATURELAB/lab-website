@@ -1,7 +1,5 @@
 ---
-title: "URBANxNATURE Lab Website"
-description: |
-  Welcome to the website. I hope you enjoy it!
+title: "Home Page"
 site: distill::distill_website
 ---
 
