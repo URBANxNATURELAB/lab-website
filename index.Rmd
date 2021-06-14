@@ -23,6 +23,8 @@ We are a conservation science lab in the [Department of Environmental Science an
 
 <h2>Recent Lab News</h2>
 
+**06-13-2021:** Dan is a co-author on a [newly published dataset](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3353) from the SNAPSHOT USA project - a coordinated effort to collect camera trap data from all 50 U.S. states.
+
 **06-09-2021:** Dan has a [new paper](http://www.italian-journal-of-mammalogy.it/A-shot-in-the-dark-White-and-infrared-LED-flash-camera-traps-yield-similar-detection,136508,0,2.html) published in *Hystrix, the Italian Journal of Mammalogy* comparing the influence of infrared and white-flash camera traps on species detections
   
 **05-25-2021:** Dan, Merri, Kate, and Travis all have talks at the [2021 International Urban Wildlife Conference](https://web.cvent.com/event/f929de7e-31c5-4f29-914e-558bfd1d0c56/summary)
