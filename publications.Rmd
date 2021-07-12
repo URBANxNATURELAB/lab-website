@@ -17,6 +17,8 @@ d-title, d-byline {
 
 # Publications
 
+Collins, M., S.B. Magle, T. Gallo. **2021**. Global trends in urban wildlife ecology and conservation. Biological Conservation. [PDF](publications/Collins_Gallo_2021_BiolCons.pdf)
+
 Lehrer, E.W, T. Gallo, M. Fidino, R.J. Kilgour, P.J. Wolff, S. Magle. **2021**. Urban bat occupancy is highly influenced by noise and the location of water: Considerations for nature-based urban planning. Landscape and Urban Planning. 210:104063. [PDF](publications/Lehrer_etal_2021_urban-bats.pdf)
 
 Fidino, M., T. Gallo, E.W. Lehrer, M.H. Murray, C. Kay H.A. Sander, B. MacDougall, C.M. Salsbury, T.J. Ryan, J.L. Angstmann, J.A. Belaire, B. Dugelby, C. Schell, T. Stankowich, M. Amaya, D. Drake, S.H. Hursh, A.A. Ahlers, J. Williamson, L.M. Hartley, A.J. Zellmer, K. Simon, and S.B. Magle. **2021**. Landscape-scale differences among cities alter common species’ responses to urbanization. Ecological Applications 31: e02253. [PDF](publications/fidino-et-al-occupancy-eap.pdf) | [COVER PHOTO](publications/eap.2292_coverphoto.pdf)
