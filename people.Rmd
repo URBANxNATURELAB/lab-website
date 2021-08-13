@@ -15,7 +15,7 @@ d-title, d-byline {
 
 <br>
 
-## Principle Investigators
+## Principal Investigators
 
 ![](images/people/travis.JPG){width=50%}
 
