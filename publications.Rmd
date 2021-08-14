@@ -17,6 +17,10 @@ d-title, d-byline {
 
 # Publications
 
+Fidino, M., Bender, J., Limbrick, K., Gallo, T., and Magle, S. B. **in press**. Strolling through a century: recreating historical bird surveys to explore 100 years of change in an urban bird community. American Naturalist.
+
+Magle, S., Fidino, M., Sander, H., Rohnke, A. T., Larson, K. L., Gallo, T., Kay, C. A. M., Lehrer, E. W., Murray, M. H., Adalsteinsson, S. A., Ahlers, A. A., Anthonysamy, W. J. B., Gramza, A. R., Green, A. M., Jordan, M. J., Lewis, J., Long, R. A., MacDougall, B., Pendergast, M. E., Remine, K., Simon, K. C., Cassady St. Clair, C., Shier, C. J., Stankowich, T., , Stevenson, C. J., Zellmer, A. J., and Schell, C. J. **in press**. Wealth and urbanization shape medium and large mammalian communities across North America. Global Change Biology.
+
 Collins, M., S.B. Magle, T. Gallo. **2021**. Global trends in urban wildlife ecology and conservation. Biological Conservation. [PDF](publications/Collins_Gallo_2021_BiolCons.pdf)
 
 Lehrer, E.W, T. Gallo, M. Fidino, R.J. Kilgour, P.J. Wolff, S. Magle. **2021**. Urban bat occupancy is highly influenced by noise and the location of water: Considerations for nature-based urban planning. Landscape and Urban Planning. 210:104063. [PDF](publications/Lehrer_etal_2021_urban-bats.pdf)
