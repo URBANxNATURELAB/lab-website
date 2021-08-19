@@ -19,7 +19,7 @@ d-title, d-byline {
 
 Fidino, M., Bender, J., Limbrick, K., Gallo, T., and Magle, S. B. **in press**. Strolling through a century: recreating historical bird surveys to explore 100 years of change in an urban bird community. American Naturalist.
 
-Magle, S., Fidino, M., Sander, H., Rohnke, A. T., Larson, K. L., Gallo, T., Kay, C. A. M., Lehrer, E. W., Murray, M. H., Adalsteinsson, S. A., Ahlers, A. A., Anthonysamy, W. J. B., Gramza, A. R., Green, A. M., Jordan, M. J., Lewis, J., Long, R. A., MacDougall, B., Pendergast, M. E., Remine, K., Simon, K. C., Cassady St. Clair, C., Shier, C. J., Stankowich, T., , Stevenson, C. J., Zellmer, A. J., and Schell, C. J. **in press**. Wealth and urbanization shape medium and large mammalian communities across North America. Global Change Biology.
+Magle, S., Fidino, M., Sander, H., Rohnke, A. T., Larson, K. L., Gallo, T., Kay, C. A. M., Lehrer, E. W., Murray, M. H., Adalsteinsson, S. A., Ahlers, A. A., Anthonysamy, W. J. B., Gramza, A. R., Green, A. M., Jordan, M. J., Lewis, J., Long, R. A., MacDougall, B., Pendergast, M. E., Remine, K., Simon, K. C., Cassady St. Clair, C., Shier, C. J., Stankowich, T., Stevenson, C. J., Zellmer, A. J., and Schell, C. J. **2021**. Wealth and urbanization shape medium and large mammalian communities across North America. Global Change Biology. [PDF](publications/Magle_2021_et_al_GCB_luxury.pdf)
 
 Collins, M., S.B. Magle, T. Gallo. **2021**. Global trends in urban wildlife ecology and conservation. Biological Conservation. [PDF](publications/Collins_Gallo_2021_BiolCons.pdf)
 
