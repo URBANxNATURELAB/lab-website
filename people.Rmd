@@ -26,14 +26,6 @@ Travis Gallo is an Assistant Professor in Urban Ecology and Conservation and is 
 
 ## Graduate Students
 
-![](images/people/kate_ritzel.png){width=50%}
-
-### Kate Ritzel, M.S. Student
-
-As an MS student in Mason’s Environmental Science and Policy Program, I have the opportunity to work with Travis Gallo and fellow graduate students exploring urban ecology, specifically in the DC metro area. I research behavioral changes in urban coyotes and raccoons by examining behavioral response to novel stimuli in urban vs. rural populations. My internship with the US Fish & Wildlife Service (Ecological Services Program) and on-going work with USGS (Land Change Science and Climate R&D) have bolstered my deep commitment to ecological research as I work towards mutually beneficial, practical solutions to conserve biodiversity.
-
-<br>
-
 ![](images/people/krista_shires.jpeg){width=50%}>
 
 ### Krista Shires, Ph.D. Student
@@ -108,7 +100,13 @@ I am currently a senior at George Mason University, and I will be graduating wit
 
 ## Lab Alumni
 
+### Graduate Students:
+
+**Kate Ritzel** - M.S. Student (2019-2021). Currently at Fairfax County Public Works and Environmental Services
+
 **Nick Moreno** – PhD student on rotation (2020)
+
+### Undergraduate Students:
 
 **Khanh Nguyen** – Undergraduate Research Assistant (2020)
 
