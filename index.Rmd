@@ -15,13 +15,15 @@ d-title, d-byline {
 
 <br>
 
-````{r, fig.align = "center", out.width = "40%"}
+```{r, fig.align = "center", out.width = "40%"}
 knitr::include_graphics("images/lab_logo_circle_teal_small.png")
 ```
 
 We are a conservation science lab in the [Department of Environmental Science and Policy](https://science.gmu.edu/academics/departments-units/environmental-science-policy) at [George Mason University](https://www2.gmu.edu/). Our lab envisions cities where nature and people thrive together. Our mission is to undertake scientific research that supports ecological and conservation-minded urban design, planning, and policy. We use theories and principles in ecology and conservation science to provide evidence-based solutions that simultaneously conserve biological diversity and improve the lives of urban residents.
 
 <h2>Recent Lab News</h2>
+
+**10-27-2021:** Krista passed her qualifying exams this week!!
 
 **08-15-2021:** New paper alert! "Wealth and urbanization shape medium and large terrestrial mammal communities", co-authored by Travis, is [now published online at *Global Change Biology*](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.15800).
 
@@ -31,4 +33,3 @@ We are a conservation science lab in the [Department of Environmental Science an
 
 **07-13-2021:** Master's student, Kate Ritzel, successfully defended her thesis on behavior adaptations in urban mammals. Congratulations, Kate!!
 
-**07-12-2021:** Our new paper "Global Trends in Urban Wildlife Ecology and Conservation" that was led by Ph.D. student Merri Collins is now [published online at *Biological Conservation*](https://authors.elsevier.com/c/1dNnj1R~eL863).
