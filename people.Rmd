@@ -42,14 +42,6 @@ I am a graduate student in the Environmental Science and Policy Program at Georg
 
 <br>
 
-![](images/people/angela_gaal.jpeg){width=50%}
-
-### Angela Gaal, M.S. Student
-
-I am an MS student in the School of Systems Biology at George Mason University. My past experience in a small animal veterinary clinic sparked my interest in animal behavior and conservation. My undergraduate research focused on social behaviors between male and female black swans before and after courtship. I currently work in a congressional office on Capitol Hill, focusing on natural resource policy and environmental issues. I am interested in the impact of urban development on climate regulation and biodiversity at large, specifically, how the distribution of ecosystem services throughout cities relates to business development. My research project uses urban forest canopy cover and vegetation data to answer broader questions about landscape management and action towards climate resiliency in the District of Columbia.
-
-<br>
-
 ![](images/people/dan_herrera.jpg){width=50%}
 
 ### Dan Herrera, Ph.D. Student
@@ -102,7 +94,9 @@ I am currently a senior at George Mason University, and I will be graduating wit
 
 ### Graduate Students:
 
-**Kate Ritzel** - M.S. Student (2019-2021). Currently at Fairfax County Public Works and Environmental Services
+**Angela Gaal** - M.S. Student (2019-2021)
+
+**Kate Ritzel** - M.S. Student (2019-2021) Currently at Fairfax County Public Works and Environmental Services
 
 **Nick Moreno** – PhD student on rotation (2020)
 
