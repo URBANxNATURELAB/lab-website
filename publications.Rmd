@@ -17,6 +17,8 @@ d-title, d-byline {
 
 # Publications
 
+Herrera DJ, Cove MV, McShea WJ, Flockhart DT, Decker S, Moore SM, Gallo T. **2022**. Prey selection and predation behavior of free-roaming domestic cats (*Felis catus*) in an urban ecosystem: implications for urban cat management. Biological Conservation. [PDF](publications/herrera_etal_2022_BiolCon.pdf)
+
 Fidino, M., Bender, J., Limbrick, K., Gallo, T., and Magle, S. B. **2021**. Strolling through a century: recreating historical bird surveys to explore 100 years of change in an urban bird community. American Naturalist. [PDF](publications/Fidino_etal_StrollingThroughACentury.pdf)
 
 Magle, S., Fidino, M., Sander, H., Rohnke, A. T., Larson, K. L., Gallo, T., Kay, C. A. M., Lehrer, E. W., Murray, M. H., Adalsteinsson, S. A., Ahlers, A. A., Anthonysamy, W. J. B., Gramza, A. R., Green, A. M., Jordan, M. J., Lewis, J., Long, R. A., MacDougall, B., Pendergast, M. E., Remine, K., Simon, K. C., Cassady St. Clair, C., Shier, C. J., Stankowich, T., Stevenson, C. J., Zellmer, A. J., and Schell, C. J. **2021**. Wealth and urbanization shape medium and large mammalian communities across North America. Global Change Biology. [PDF](publications/Magle_2021_et_al_GCB_luxury.pdf)
