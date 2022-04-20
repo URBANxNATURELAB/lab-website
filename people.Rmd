@@ -28,7 +28,7 @@ Travis Gallo is an Assistant Professor in Urban Ecology and Conservation and is 
 
 ![](images/people/krista_shires.jpeg){width=50%}
 
-### Krista Shires, Ph.D. Student
+### Krista Shires, Ph.D. Candidate
 
 I am a PhD student in Environmental Science and Policy with a background in Psychology. My previous experiences as a veterinary technician, animal control officer, and zoo keeper-aide have all influenced my research. I am interested in the impact of urbanization on wildlife, specifically, how human interference alters predator-prey dynamics, stress, and behavioral patterns of local species. I am interested in utilizing citizen science to answer broader questions about landscape ecology and serve as a method of public education with the aim of fostering a connection between people and nature.
 
@@ -36,7 +36,7 @@ I am a PhD student in Environmental Science and Policy with a background in Psyc
 
 ![](images/people/merri_collins.jpeg){width=50%}
 
-### Merri Collins, Ph.D. Student
+### Merri Collins, Ph.D. Candidate
 
 I am a graduate student in the Environmental Science and Policy Program at George Mason. I have worked with a variety of species in past positions as a wildlife conservation biologist, everything from herpetofauna to marine mammals. I am interested in human/wildlife conflict mitigation, understanding drivers of local habitat and species losses, and how we can reduce these through practical application and management. At Mason I will be starting the National Capital’s first large-scale, and long-term urban wildlife monitoring project.
 
@@ -73,9 +73,9 @@ I am currently pursuing a Master’s degree in environmental science with a conc
 
 ![](images/people/faith_kruger.png){width=50%}
 
-### Faith Kruger, Research Assistant
+### Faith Kruger, OSCAR Undergraduate Research Scholar
 
-I am an undergraduate student majoring in Environmental Science with a concentration in wildlife. I have always been passionate about natural sciences and wildlife and love how this major combines both. I hope to be involved in the field of wildlife conservation and look forward to gaining research experience.
+I am an undergraduate student majoring in Environmental Science with a concentration in wildlife. I have always been passionate about natural sciences and wildlife and love how this major combines both. I hope to be involved in the field of wildlife conservation and look forward to gaining research experience. In 2022 I was awarded funding through the Undergraduate Research Scholars Program at GMU to study the distribution and habitat use of urban flying squirrels in D.C. greenspaces.
 
 <br>
 
