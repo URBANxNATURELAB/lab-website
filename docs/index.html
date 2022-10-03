@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2181,7 +2188,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2252,43 +2259,17 @@ d-title, d-byline {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="images/lab_logo_circle_teal_small.png" width="40%" style="display: block; margin: auto;" /></p>
 </div>
-<p>We are a conservation science and quantitative ecology lab in the <a
-href="https://enst.umd.edu/">Department of Environmental Science and
-Technology</a> at the <a href="https://umd.edu/">University of
-Maryland</a>. We recently transitioned from the <a
-href="https://science.gmu.edu/academics/departments-units/environmental-science-policy">Department
-of Environmental Science and Policy</a> at <a
-href="https://www2.gmu.edu/">George Mason University</a> and currently
-have lab members at both institutions.</p>
-<p>Our lab envisions cities where nature and people thrive together. Our
-mission is to undertake scientific research that supports ecological and
-conservation-minded urban design, planning, and policy. We use theories
-and principles in ecology and conservation science to provide
-evidence-based solutions that simultaneously conserve biological
-diversity and improve the lives of urban residents.</p>
+<p>We are a conservation science and quantitative ecology lab in the <a href="https://enst.umd.edu/" target="_blank">Department of Environmental Science and Technology</a> at the <a href="https://umd.edu/" target="_blank">University of Maryland</a>. We recently transitioned from the <a href="https://science.gmu.edu/academics/departments-units/environmental-science-policy" target="_blank">Department of Environmental Science and Policy</a> at <a href="https://www2.gmu.edu/" target="_blank">George Mason University</a> and currently have lab members at both institutions.</p>
+<p>Our lab envisions cities where nature and people thrive together. Our mission is to undertake scientific research that supports ecological and conservation-minded urban design, planning, and policy. We use theories and principles in ecology and conservation science to provide evidence-based solutions that simultaneously conserve biological diversity and improve the lives of urban residents.</p>
 <h2>
 Recent Lab News
 </h2>
-<p><strong>08-21-2022:</strong> We have moved! Our lab is transitioning
-to the Department of Environmental Science and Technology at the
-University of Maryland starting Fall 2022.</p>
-<p><strong>07-31-2022:</strong> Congrats to Hannah who received a
-Catherine Z. and Richard J. Becker Environmental Science and Policy
-Graduate Research Fellowship!</p>
-<p><strong>04-20-2022:</strong> Congrats to Merri who has officially
-advanced to Ph.D. candidacy!</p>
-<p><strong>04-20-2022:</strong> Undergrads Faith Kruger and Jordan Davis
-were both awarded summer research funding through the Undergraduate
-Research Scholars Program at GMU. This summer Faith will be studying the
-distribution and habitat use of southern flying squirrels in D.C., and
-Jordan will be studying eastern box turtle movements and populations in
-N. Virginia!</p>
-<p><strong>04-07-2022:</strong> 🚨 New Paper Alert! 🚨 Travis has a new
-open access paper out in <em>eLife</em> that explores diel activity
-patterns of urban mammals. Check it out <a
-href="https://elifesciences.org/articles/74756">here</a></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p><strong>10-03-2022:</strong> We are hiring a Postdoctoral Researcher to study human-wildlife interactions with an eye towards disease spread. See <a href="Postdoc_Announcment_2022.pdf">our posting</a> for more details and how to apply.</p>
+<p><strong>08-21-2022:</strong> We have moved! Our lab is transitioning to the Department of Environmental Science and Technology at the University of Maryland starting Fall 2022.</p>
+<p><strong>07-31-2022:</strong> Congrats to Hannah who received a Catherine Z. and Richard J. Becker Environmental Science and Policy Graduate Research Fellowship!</p>
+<p><strong>04-20-2022:</strong> Congrats to Merri who has officially advanced to Ph.D. candidacy!</p>
+<p><strong>04-20-2022:</strong> Undergrads Faith Kruger and Jordan Davis were both awarded summer research funding through the Undergraduate Research Scholars Program at GMU. This summer Faith will be studying the distribution and habitat use of southern flying squirrels in D.C., and Jordan will be studying eastern box turtle movements and populations in N. Virginia!</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

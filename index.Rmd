@@ -19,11 +19,13 @@ d-title, d-byline {
 knitr::include_graphics("images/lab_logo_circle_teal_small.png")
 ```
 
-We are a conservation science and quantitative ecology lab in the [Department of Environmental Science and Technology](https://enst.umd.edu/) at the [University of Maryland](https://umd.edu/). We recently transitioned from the [Department of Environmental Science and Policy](https://science.gmu.edu/academics/departments-units/environmental-science-policy) at [George Mason University](https://www2.gmu.edu/) and currently have lab members at both institutions. 
+We are a conservation science and quantitative ecology lab in the [Department of Environmental Science and Technology](https://enst.umd.edu/){target="_blank"} at the [University of Maryland](https://umd.edu/){target="_blank"}. We recently transitioned from the [Department of Environmental Science and Policy](https://science.gmu.edu/academics/departments-units/environmental-science-policy){target="_blank"} at [George Mason University](https://www2.gmu.edu/){target="_blank"} and currently have lab members at both institutions. 
 
 Our lab envisions cities where nature and people thrive together. Our mission is to undertake scientific research that supports ecological and conservation-minded urban design, planning, and policy. We use theories and principles in ecology and conservation science to provide evidence-based solutions that simultaneously conserve biological diversity and improve the lives of urban residents.
 
 <h2>Recent Lab News</h2>
+
+**10-03-2022:** We are hiring a Postdoctoral Researcher to study human-wildlife interactions with an eye towards disease spread. See [our posting](Postdoc_Announcment_2022.pdf) for more details and how to apply.
 
 **08-21-2022:** We have moved! Our lab is transitioning to the Department of Environmental Science and Technology at the University of Maryland starting Fall 2022. 
 
@@ -32,5 +34,3 @@ Our lab envisions cities where nature and people thrive together. Our mission is
 **04-20-2022:** Congrats to Merri who has officially advanced to Ph.D. candidacy!
 
 **04-20-2022:** Undergrads Faith Kruger and Jordan Davis were both awarded summer research funding through the Undergraduate Research Scholars Program at GMU. This summer Faith will be studying the distribution and habitat use of southern flying squirrels in D.C., and Jordan will be studying eastern box turtle movements and populations in N. Virginia!
-
-**04-07-2022:** 🚨 New Paper Alert! 🚨 Travis has a new open access paper out in *eLife* that explores diel activity patterns of urban mammals. Check it out [here](https://elifesciences.org/articles/74756)

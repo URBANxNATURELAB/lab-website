@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -525,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -766,10 +768,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1601,9 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1615,6 +1625,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1714,6 +1749,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1736,7 +1773,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2151,7 +2188,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2221,140 +2258,53 @@ d-title, d-byline {
 <p><br></p>
 <h2 id="principal-investigators">Principal Investigators</h2>
 <p><img src="images/people/travis.JPG" style="width:50.0%" /></p>
-<h3 id="travis-gallo-assistant-professor">Travis Gallo, Assistant
-Professor</h3>
-<p><a
-href="https://scholar.google.com/citations?user=RaEz6G8AAAAJ&amp;hl=en">Google
-Scholar</a> | <a
-href="https://www.researchgate.net/profile/Travis_Gallo">Research
-Gate</a> | <a href="publications/2021-05-18_CV_Gallo.pdf">CV</a></p>
-<p>Travis Gallo is an Assistant Professor in Urban Ecology and
-Conservation and is the lab PI. Travis works to understand how urban
-environments shape species distributions, populations, communities, and
-behaviors. The goal of his research is to provide evidence-based
-solutions that simultaneously conserve biological diversity and improve
-the lives of urban residents.</p>
+<h3 id="travis-gallo-assistant-professor">Travis Gallo, Assistant Professor</h3>
+<p><a href="https://scholar.google.com/citations?user=RaEz6G8AAAAJ&amp;hl=en" target="_blank">Google Scholar</a> | <a href="https://www.researchgate.net/profile/Travis_Gallo" target="_blank">Research Gate</a> | <a href="publications/2021-05-18_CV_Gallo.pdf">CV</a></p>
+<p>Travis Gallo is an Assistant Professor in Urban Ecology and Conservation and is the lab PI. Travis works to understand how urban environments shape species distributions, populations, communities, and behaviors. The goal of his research is to provide evidence-based solutions that simultaneously conserve biological diversity and improve the lives of urban residents.</p>
 <h2 id="graduate-students">Graduate Students</h2>
-<p><img src="images/people/krista_shires.jpeg"
-style="width:50.0%" /></p>
-<h3 id="krista-shires-ph.d.-candidate">Krista Shires,
-Ph.D. Candidate</h3>
-<p>I am a PhD student in Environmental Science and Policy with a
-background in Psychology. My previous experiences as a veterinary
-technician, animal control officer, and zoo keeper-aide have all
-influenced my research. I am interested in the impact of urbanization on
-wildlife, specifically, how human interference alters predator-prey
-dynamics, stress, and behavioral patterns of local species. I am
-interested in utilizing citizen science to answer broader questions
-about landscape ecology and serve as a method of public education with
-the aim of fostering a connection between people and nature.</p>
+<p><img src="images/people/krista_shires.jpeg" style="width:50.0%" /></p>
+<h3 id="krista-shires-ph.d.-candidate">Krista Shires, Ph.D. Candidate</h3>
+<p>I am a PhD student in Environmental Science and Policy with a background in Psychology. My previous experiences as a veterinary technician, animal control officer, and zoo keeper-aide have all influenced my research. I am interested in the impact of urbanization on wildlife, specifically, how human interference alters predator-prey dynamics, stress, and behavioral patterns of local species. I am interested in utilizing citizen science to answer broader questions about landscape ecology and serve as a method of public education with the aim of fostering a connection between people and nature.</p>
 <p><br></p>
-<p><img src="images/people/merri_collins.jpeg"
-style="width:50.0%" /></p>
-<h3 id="merri-collins-ph.d.-candidate">Merri Collins,
-Ph.D. Candidate</h3>
-<p>I am a graduate student in the Environmental Science and Policy
-Program at George Mason. I have worked with a variety of species in past
-positions as a wildlife conservation biologist, everything from
-herpetofauna to marine mammals. I am interested in human/wildlife
-conflict mitigation, understanding drivers of local habitat and species
-losses, and how we can reduce these through practical application and
-management. At Mason I will be starting the National Capital’s first
-large-scale, and long-term urban wildlife monitoring project.</p>
+<p><img src="images/people/merri_collins.jpeg" style="width:50.0%" /></p>
+<h3 id="merri-collins-ph.d.-candidate">Merri Collins, Ph.D. Candidate</h3>
+<p>I am a graduate student in the Environmental Science and Policy Program at George Mason. I have worked with a variety of species in past positions as a wildlife conservation biologist, everything from herpetofauna to marine mammals. I am interested in human/wildlife conflict mitigation, understanding drivers of local habitat and species losses, and how we can reduce these through practical application and management. At Mason I will be starting the National Capital’s first large-scale, and long-term urban wildlife monitoring project.</p>
 <p><br></p>
 <p><img src="images/people/dan_herrera.jpg" style="width:50.0%" /></p>
 <h3 id="dan-herrera-ph.d.-student">Dan Herrera, Ph.D. Student</h3>
-<p><a href="https://www.herrerawildlife.com/">Dan’s personal
-website</a></p>
-<p>I am a graduate student in Environmental Science and Policy at George
-Mason University. My research experience has broadly focused on animal
-behavior and urban ecology. During the winter of 2017 and summer of
-2018, I worked with Dr. Gallo at the Urban Wildlife Institute in
-Chicago, IL. I have since moved to Washington, DC, to survey the
-Capitol’s wildlife through a collaboration between the Humane Rescue
-Alliance and the Smithsonian Conservation Biology Institute. I am
-thrilled to continue working with Dr. Gallo as we use these data to
-better understand wildlife response to urbanization on a fine scale. I
-am interested in dynamic interactions between the anthropogenic and
-natural landscapes that influence urban wildlife, and the resulting
-potential human-wildlife conflict.</p>
+<p><a href="https://www.herrerawildlife.com/">Dan’s personal website</a></p>
+<p>I am a graduate student in Environmental Science and Policy at George Mason University. My research experience has broadly focused on animal behavior and urban ecology. During the winter of 2017 and summer of 2018, I worked with Dr. Gallo at the Urban Wildlife Institute in Chicago, IL. I have since moved to Washington, DC, to survey the Capitol’s wildlife through a collaboration between the Humane Rescue Alliance and the Smithsonian Conservation Biology Institute. I am thrilled to continue working with Dr. Gallo as we use these data to better understand wildlife response to urbanization on a fine scale. I am interested in dynamic interactions between the anthropogenic and natural landscapes that influence urban wildlife, and the resulting potential human-wildlife conflict.</p>
 <p><br></p>
 <p><img src="images/people/kay.jpg" style="width:50.0%" /></p>
 <h3 id="kay-pontarelli-m.s.-student">Kay Pontarelli, M.S. Student</h3>
-<p>I’m a M.S graduate student in the Environmental Science and Policy
-Program at George Mason University (GMU), with a concentration in
-Conservation Science and Policy. My interests are within animal ecology
-in urbanized areas. My love for wildlife came from growing up as a
-military brat overseas with each transition presenting new habitats to
-explore. At GMU I’m studying insect community composition in residential
-yards to see how neighborhoods could provide beneficial habitat for
-insects. This would, in turn, affect nearby flora and fauna that depend
-on insects as food, pollinators, pest control, and decomposers, and
-decrease fragmentation caused by urbanization.</p>
+<p>I’m a M.S graduate student in the Environmental Science and Policy Program at George Mason University (GMU), with a concentration in Conservation Science and Policy. My interests are within animal ecology in urbanized areas. My love for wildlife came from growing up as a military brat overseas with each transition presenting new habitats to explore. At GMU I’m studying insect community composition in residential yards to see how neighborhoods could provide beneficial habitat for insects. This would, in turn, affect nearby flora and fauna that depend on insects as food, pollinators, pest control, and decomposers, and decrease fragmentation caused by urbanization.</p>
 <p><br></p>
 <p><img src="images/people/hannah_wood.jpeg" style="width:50.0%" /></p>
 <h3 id="hannah-wood-m.s.-student">Hannah Wood, M.S. Student</h3>
-<p>I am currently pursuing a Master’s degree in environmental science
-with a concentration in conservation science and policy through the ESP
-Accelerated Master’s program. I have always been passionate about
-wildlife and taking care of the world around us. My research
-investigates behavior change of urban mammals using a field-based novel
-object study in the Washington, D.C. metro.</p>
+<p>I am currently pursuing a Master’s degree in environmental science with a concentration in conservation science and policy through the ESP Accelerated Master’s program. I have always been passionate about wildlife and taking care of the world around us. My research investigates behavior change of urban mammals using a field-based novel object study in the Washington, D.C. metro.</p>
 <h2 id="undergraduate-students">Undergraduate Students</h2>
 <p><img src="images/people/faith_kruger.png" style="width:50.0%" /></p>
-<h3 id="faith-kruger-oscar-undergraduate-research-scholar">Faith Kruger,
-OSCAR Undergraduate Research Scholar</h3>
-<p>I am an undergraduate student majoring in Environmental Science with
-a concentration in wildlife. I have always been passionate about natural
-sciences and wildlife and love how this major combines both. I hope to
-be involved in the field of wildlife conservation and look forward to
-gaining research experience. In 2022 I was awarded funding through the
-Undergraduate Research Scholars Program at GMU to study the distribution
-and habitat use of urban flying squirrels in D.C. greenspaces.</p>
+<h3 id="faith-kruger-oscar-undergraduate-research-scholar">Faith Kruger, OSCAR Undergraduate Research Scholar</h3>
+<p>I am an undergraduate student majoring in Environmental Science with a concentration in wildlife. I have always been passionate about natural sciences and wildlife and love how this major combines both. I hope to be involved in the field of wildlife conservation and look forward to gaining research experience. In 2022 I was awarded funding through the Undergraduate Research Scholars Program at GMU to study the distribution and habitat use of urban flying squirrels in D.C. greenspaces.</p>
 <p><br></p>
 <p><img src="images/people/tristan_new.jpg" style="width:50.0%" /></p>
-<h3 id="tristan-silva-montoya-research-assistant">Tristan Silva-Montoya,
-Research Assistant</h3>
-<p>I’m an undergraduate student here at George Mason studying
-Environmental Science. I plan to concentrate in Wildlife, specifically
-herpetology. I have a strong passion for all wildlife that started when
-I was young and would go camping with my parents. Since that passion
-started I’ve always had pets in the house starting from geckos and
-turtles to chameleons and monitors along with the dogs of course.
-Growing up around a lot of animals really makes you curious about the
-intelligence and personality of those animals, hence my future goal of
-working in wildlife conservation or beneficial captive facilities used
-for breeding and awareness. I am more than excited for the opportunity
-of gaining experience and working towards something bigger than
-myself.</p>
+<h3 id="tristan-silva-montoya-research-assistant">Tristan Silva-Montoya, Research Assistant</h3>
+<p>I’m an undergraduate student here at George Mason studying Environmental Science. I plan to concentrate in Wildlife, specifically herpetology. I have a strong passion for all wildlife that started when I was young and would go camping with my parents. Since that passion started I’ve always had pets in the house starting from geckos and turtles to chameleons and monitors along with the dogs of course. Growing up around a lot of animals really makes you curious about the intelligence and personality of those animals, hence my future goal of working in wildlife conservation or beneficial captive facilities used for breeding and awareness. I am more than excited for the opportunity of gaining experience and working towards something bigger than myself.</p>
 <p><br></p>
 <p><img src="images/people/alix.jpeg" style="width:50.0%" /></p>
-<h3 id="alix-upchurch-research-assistant">Alix Upchurch, Research
-Assistant</h3>
-<p>I am an undergraduate student in the Honors College at George Mason
-University majoring in biology and minoring in conservation. I plan to
-go to veterinary school and study to become a wildlife veterinarian and
-practice conservation medicine. I have always been interested in
-wildlife and protecting them and their habitat. I look forward to the
-experience I will gain here at the URBANxNATURE lab.</p>
+<h3 id="alix-upchurch-research-assistant">Alix Upchurch, Research Assistant</h3>
+<p>I am an undergraduate student in the Honors College at George Mason University majoring in biology and minoring in conservation. I plan to go to veterinary school and study to become a wildlife veterinarian and practice conservation medicine. I have always been interested in wildlife and protecting them and their habitat. I look forward to the experience I will gain here at the URBANxNATURE lab.</p>
 <h2 id="lab-alumni">Lab Alumni</h2>
 <h3 id="graduate-students-1">Graduate Students:</h3>
-<p><strong>Angela Gaal</strong> - M.S. Student (2019-2021). Currently at
-Lord Green Strategies</p>
-<p><strong>Kate Ritzel</strong> - M.S. Student (2019-2021). Currently at
-U.S.G.S.</p>
+<p><strong>Angela Gaal</strong> - M.S. Student (2019-2021). Currently at Lord Green Strategies</p>
+<p><strong>Kate Ritzel</strong> - M.S. Student (2019-2021). Currently at U.S.G.S.</p>
 <p><strong>Nick Moreno</strong> – PhD student on rotation (2020).</p>
 <h3 id="undergraduate-students-1">Undergraduate Students:</h3>
-<p><strong>Roberto Aguilar-Rojas</strong> - Undergraduate Research
-Assistant (2021).</p>
-<p><strong>Khanh Nguyen</strong> – Undergraduate Research Assistant
-(2020).</p>
-<p><strong>Melissa Irahet</strong> – Undergraduate Research Assistant
-(2020).</p>
-<p><strong>Daniel Marzluff</strong> – Undergraduate Research Assistant
-(2020)</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p><strong>Roberto Aguilar-Rojas</strong> - Undergraduate Research Assistant (2021).</p>
+<p><strong>Khanh Nguyen</strong> – Undergraduate Research Assistant (2020).</p>
+<p><strong>Melissa Irahet</strong> – Undergraduate Research Assistant (2020).</p>
+<p><strong>Daniel Marzluff</strong> – Undergraduate Research Assistant (2020)</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
