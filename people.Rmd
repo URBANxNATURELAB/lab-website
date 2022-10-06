@@ -48,7 +48,15 @@ I am a graduate student in the Environmental Science and Policy Program at Georg
 
 [Dan's personal website](https://www.herrerawildlife.com/)
 
-I am a graduate student in Environmental Science and Policy at George Mason University. My research experience has broadly focused on animal behavior and urban ecology. During the winter of 2017 and summer of 2018, I worked with Dr. Gallo at the Urban Wildlife Institute in Chicago, IL. I have since moved to Washington, DC, to survey the Capitol’s wildlife through a collaboration between the Humane Rescue Alliance and the Smithsonian Conservation Biology Institute. I am thrilled to continue working with Dr. Gallo as we use these data to better understand wildlife response to urbanization on a fine scale. I am interested in dynamic interactions between the anthropogenic and natural landscapes that influence urban wildlife, and the resulting potential human-wildlife conflict.
+I am a graduate student in Environmental Science and Technology at the University of Maryland. My research experience has broadly focused on animal behavior and urban ecology. During the winter of 2017 and summer of 2018, I worked with Dr. Gallo at the Urban Wildlife Institute in Chicago, IL. I have since moved to Washington, DC, to survey the Capitol’s wildlife through a collaboration between the Humane Rescue Alliance and the Smithsonian Conservation Biology Institute. I am thrilled to continue working with Dr. Gallo as we use these data to better understand wildlife response to urbanization on a fine scale. I am interested in dynamic interactions between the anthropogenic and natural landscapes that influence urban wildlife, and the resulting potential human-wildlife conflict.
+
+<br>
+
+![](images/people/adampekor.jpeg){width=50%}
+
+### Adam Pekor, Ph.D. Student
+
+I am a graduate student in Environmental Science and Technology with a background in law. My research focuses on human-wildlife coexistence and lion population connectivity in northern Tanzania. Working with a local conservation organization called KopeLion, I helped develop a conservation incentive payment program to mitigate human-lion conflict in a key protected area. I am now studying the impacts of this program and lion population connectivity across the region to help understand the most effective tools for engaging communities, facilitating connectivity, and promoting coexistence in shared landscapes.
 
 <br>
 
@@ -70,27 +78,11 @@ I am currently pursuing a Master’s degree in environmental science with a conc
 
 ## Undergraduate Students
 
+### Prospective University of Maryland undergrads:
 
-![](images/people/faith_kruger.png){width=50%}
+We are always willing to work with eager and motivated undergraduate researchers. If you are interested in working in our lab and you qualify for work-study please send an email with your research interest and any potential project ideas.
 
-### Faith Kruger, OSCAR Undergraduate Research Scholar
 
-I am an undergraduate student majoring in Environmental Science with a concentration in wildlife. I have always been passionate about natural sciences and wildlife and love how this major combines both. I hope to be involved in the field of wildlife conservation and look forward to gaining research experience. In 2022 I was awarded funding through the Undergraduate Research Scholars Program at GMU to study the distribution and habitat use of urban flying squirrels in D.C. greenspaces.
-
-<br>
-
-![](images/people/tristan_new.jpg){width=50%}
-
-### Tristan Silva-Montoya, Research Assistant
-I'm an undergraduate student here at George Mason studying Environmental Science. I plan to concentrate in Wildlife, specifically herpetology. I have a strong passion for all wildlife that started when I was young and would go camping with my parents. Since that passion started I've always had pets in the house starting from geckos and turtles to chameleons and monitors along with the dogs of course. Growing up around a lot of animals really makes you curious about the intelligence and personality of those animals, hence my future goal of working in wildlife conservation or beneficial captive facilities used for breeding and awareness. I am more than excited for the opportunity of gaining experience and working towards something bigger than myself.
-
-<br>
-
-![](images/people/alix.jpeg){width=50%}
-
-### Alix Upchurch, Research Assistant
-
-I am an undergraduate student in the Honors College at George Mason University majoring in biology and minoring in conservation. I plan to go to veterinary school and study to become a wildlife veterinarian and practice conservation medicine. I have always been interested in wildlife and protecting them and their habitat. I look forward to the experience I will gain here at the URBANxNATURE lab.
 
 ## Lab Alumni
 
@@ -103,6 +95,12 @@ I am an undergraduate student in the Honors College at George Mason University m
 **Nick Moreno** – PhD student on rotation (2020).
 
 ### Undergraduate Students:
+
+**Faith Kruger** - Undergraduate Research Assistant (2020-2022)
+
+**Tristan Silva-Montoya** - Undergraduate Research Assistant (2020-2022)
+
+**Alix Upchurch** - Undergraduate Research Assistant (2022)
 
 **Roberto Aguilar-Rojas** - Undergraduate Research Assistant (2021).
 

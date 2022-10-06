@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2181,7 +2188,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2249,26 +2256,16 @@ d-title, d-byline {
 }
 </style>
 <p><br></p>
-<h2 id="prospective-graduate-students">Prospective graduate
-students:</h2>
-<p>I currently do not have funding for new students in our lab. However,
-if you are interested in our lab and would like me to have your
-materials and contact information on file, please send the following in
-a single pdf:</p>
+<h2 id="prospective-graduate-students">Prospective graduate students:</h2>
+<p>I currently do not have funding for new students in our lab. However, if you are interested in our lab and would like me to have your materials and contact information on file, please send the following in a single pdf:</p>
 <ul>
 <li><strong>Letter of interest</strong></li>
-<li><strong>CV (education, publications, awards, GRE
-scores)</strong></li>
+<li><strong>CV (education, publications, awards, GRE scores)</strong></li>
 <li><strong>Contact information for three references</strong></li>
 </ul>
-<h2 id="prospective-university-of-maryland-undergrads">Prospective
-University of Maryland undergrads:</h2>
-<p>I am always willing to work with eager and motivated undergraduate
-researchers. If you are interested in working in our lab and you qualify
-for work-study please send me a note with your research interest and any
-potential project ideas.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h2 id="prospective-university-of-maryland-undergrads">Prospective University of Maryland undergrads:</h2>
+<p>I am always willing to work with eager and motivated undergraduate researchers. If you are interested in working in our lab and you qualify for work-study please send me a note with your research interest and any potential project ideas.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
