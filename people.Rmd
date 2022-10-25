@@ -20,7 +20,7 @@ d-title, d-byline {
 ![](images/people/travis.JPG){width=50%}
 
 ### Travis Gallo, Assistant Professor
-[Google Scholar](https://scholar.google.com/citations?user=RaEz6G8AAAAJ&amp;hl=en){target="_blank"} | [Research Gate](https://www.researchgate.net/profile/Travis_Gallo){target="_blank"} | [CV](publications/2021-05-18_CV_Gallo.pdf)
+[Google Scholar](https://scholar.google.com/citations?user=RaEz6G8AAAAJ&amp;hl=en){target="_blank"} | [Research Gate](https://www.researchgate.net/profile/Travis_Gallo){target="_blank"} | [CV](publications/2022-10-25_CV_Gallo.pdf)
 
 Travis Gallo is an Assistant Professor in Urban Ecology and Conservation and is the lab PI. Travis works to understand how urban environments shape species distributions, populations, communities, and behaviors. The goal of his research is to provide evidence-based solutions that simultaneously conserve biological diversity and improve the lives of urban residents.
 
