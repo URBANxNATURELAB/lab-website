@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -525,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -766,10 +768,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1601,9 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1615,6 +1625,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1714,6 +1749,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1736,7 +1773,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2151,7 +2188,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2220,130 +2257,33 @@ d-title, d-byline {
 </style>
 <p><br></p>
 <h1 id="publications">Publications</h1>
-<p>Gallo, T., M. Fidino, B. Gerber, A.A. Ahlers, J.L. Angstmann, M.
-Amaya, A.L. Concilio, D. Drake, D. Gray, E.W. Lehrer, M.H. Murray, T.J.
-Ryan, C.C. St. Clair, C.M. Salsbury, H.A. Sander, T. Stankowich, J.
-Williamson, J.A. Belaire, K. Simon, Seth B. Magle.
-<strong>2022</strong>. Mammals adjust diel activities across gradients
-of urbanization. eLife 11:e74756 <a
-href="publications/elife-74756-v2.pdf">PDF</a></p>
-<p>Herrera DJ, Cove MV, McShea WJ, Flockhart DT, Decker S, Moore SM,
-Gallo T. <strong>2022</strong>. Prey selection and predation behavior of
-free-roaming domestic cats (<em>Felis catus</em>) in an urban ecosystem:
-implications for urban cat management. Biological Conservation.
-268:109503 <a
-href="publications/herrera_etal_2022_BiolCon.pdf">PDF</a></p>
-<p>Fidino, M., Bender, J., Limbrick, K., Gallo, T., and Magle, S. B.
-<strong>2022</strong>. Strolling through a century: recreating
-historical bird surveys to explore 100 years of change in an urban bird
-community. American Naturalist. 199:159-167 <a
-href="publications/Fidino_etal_StrollingThroughACentury.pdf">PDF</a></p>
-<p>Magle, S., Fidino, M., Sander, H., Rohnke, A. T., Larson, K. L.,
-Gallo, T., Kay, C. A. M., Lehrer, E. W., Murray, M. H., Adalsteinsson,
-S. A., Ahlers, A. A., Anthonysamy, W. J. B., Gramza, A. R., Green, A.
-M., Jordan, M. J., Lewis, J., Long, R. A., MacDougall, B., Pendergast,
-M. E., Remine, K., Simon, K. C., Cassady St. Clair, C., Shier, C. J.,
-Stankowich, T., Stevenson, C. J., Zellmer, A. J., and Schell, C. J.
-<strong>2021</strong>. Wealth and urbanization shape medium and large
-mammalian communities across North America. Global Change Biology. 27:
-5446-5459 <a
-href="publications/Magle_2021_et_al_GCB_luxury.pdf">PDF</a></p>
-<p>Collins, M., S.B. Magle, T. Gallo. <strong>2021</strong>. Global
-trends in urban wildlife ecology and conservation. Biological
-Conservation. 26:109236 <a
-href="publications/Collins_Gallo_2021_BiolCons.pdf">PDF</a></p>
-<p>Lehrer, E.W, T. Gallo, M. Fidino, R.J. Kilgour, P.J. Wolff, S. Magle.
-<strong>2021</strong>. Urban bat occupancy is highly influenced by noise
-and the location of water: Considerations for nature-based urban
-planning. Landscape and Urban Planning. 210:104063. <a
-href="publications/Lehrer_etal_2021_urban-bats.pdf">PDF</a></p>
-<p>Fidino, M., T. Gallo, E.W. Lehrer, M.H. Murray, C. Kay H.A. Sander,
-B. MacDougall, C.M. Salsbury, T.J. Ryan, J.L. Angstmann, J.A. Belaire,
-B. Dugelby, C. Schell, T. Stankowich, M. Amaya, D. Drake, S.H. Hursh,
-A.A. Ahlers, J. Williamson, L.M. Hartley, A.J. Zellmer, K. Simon, and
-S.B. Magle. <strong>2021</strong>. Landscape-scale differences among
-cities alter common species’ responses to urbanization. Ecological
-Applications 31: e02253. <a
-href="publications/fidino-et-al-occupancy-eap.pdf">PDF</a> | <a
-href="publications/eap.2292_coverphoto.pdf">COVER PHOTO</a></p>
-<p>Ritzel, K. and T. Gallo. <strong>2020</strong>. Behavior Change in
-Urban Mammals: A Systematic Review. Frontiers in Ecology and Evolution.
-8:576665. <a
-href="publications/Ritzel_Gallo_2020_FrontEcolEvol.pdf">PDF</a></p>
-<p>*Gallo, T., *M. Fidino, E.W. Lehrer, S. Magle. <strong>2019</strong>.
-Urbanization alters predator-avoidance behaviours. Journal of Animal
-Ecology. 88:793-803. <a
-href="publications/Gallo_et_al-2019-Journal_of_Animal_Ecology.pdf">PDF</a>
-*Both authors contributed equally</p>
-<p>Potratz, E., J.S. Brown, T. Gallo, C. Anchor, R.M Santymire.
-<strong>2019</strong>. Effects of demography and urbanization on stress
-and body condition of urban white-tailed deer. Urban Ecosystems. <a
-href="publications/Potratz2019_Article_EffectsOfDemographyAndUrbaniza.pdf">PDF</a></p>
-<p>Magle, S.B., M. Fidino, E.W. Lehrer, T. Gallo, M.P. Mulligan, M.J.
-Ríos, A.A. Ahlers, J. Angstmann, A. Belaire, B. Dugelby, A. Gramza, L.
-Hartley, B. MacDougall, T. Ryan, C. Salsbury, H. Sander, C. Schell, K.
-Simon, D. Drake. <strong>2019</strong>. Advancing urban wildlife
-research through a multi-city collaboration. Frontiers in Ecology and
-the Environment. 17:232-239. <a
-href="publications/Magle_etal_AdvancingUrbanWildlife.pdf">PDF</a></p>
-<p>Gallo, T. and M. Fidino. <strong>2018</strong>. Insight: Making
-wildlife welcome in urban areas. eLife 7:e41348. <a
-href="publications/eLife.41348.pdf">PDF</a></p>
-<p>Gallo, T., E.W. Lehrer, M. Fidino, R.J. Kilgour, P.J. Wolff, S.
-Magle. <strong>2018</strong>. Need for multiscale planning for
-conservation of urban bats. Conservation Biology. 32:638-647. <a
-href="publications/Gallo_et_al-2018-Conservation_Biology.pdf">PDF</a></p>
-<p>Pejchar, L., T. Gallo, M. Hooten, G. Dailey. <strong>2018</strong>.
-Predicting effects of large-scale reforestation on native and exotic
-birds. Diversity and Distributions. 24:811-819. <a
-href="publications/pejchar_dd.pdf">PDF</a></p>
-<p>Gallo, T., M. Fidino, E.W. Lehrer, S. Magle. <strong>2017</strong>.
-Mammal diversity and metacommunity dynamics in urban green spaces:
-implications for urban wildlife conservation. Ecological Applications.
-27:2330–2341. <a href="publications/galloetal_eap.pdf">PDF</a></p>
-<p>Gallo, T., L.T. Stinson, L. Pejchar. <strong>2017</strong>.
-Mitigation for energy development fails to mimic natural disturbance for
-birds and mammals. Biological Conservation. 212:39-47. <a
-href="publications/Gallo_et_al_2017_biolcons.pdf">PDF</a></p>
-<p>Gallo, T. and L. Pejchar. <strong>2017</strong>. Woodland reduction
-and long-term change in breeding bird communities. Journal of Wildlife
-Management. 81:259-268. <a
-href="publications/gallo_jwmg.21188.pdf">PDF</a></p>
-<p>Farr, C., D. Bennett, S. Bombaci, T. Gallo, A. Mangan, T. Nogeire, H.
-Riedl. L. Stinson, K. Wilkins, L. Pejchar. <strong>2017</strong>.
-Addressing the gender gap in distinguished speakers at professional
-ecology conferences. Bioscience. 67:464-468. <a
-href="publications/Farr_etal_2017_BioScience.pdf">PDF</a></p>
-<p>Bombaci, S., T. Gallo, L. Pejchar. <strong>2017</strong>. Small-scale
-woodland reduction practices have neutral or negative short-term effects
-on birds and small mammals. Rangeland Ecology and Management.
-70:363-373. <a href="publications/Bombaci_et_al_2017.pdf">PDF</a></p>
-<p>Miller, A., E. Goad, T. Gallo, L. Pejchar, L. Bailey, S. Reed.
-<strong>2017</strong>. The impact of exurban housing density on
-wintering birds. The Wilson Journal of Ornithology. 129:85-97. <a
-href="publications/Miller-et-al.-2017-Exurban-birds.pdf">PDF</a></p>
-<p>Riedl, H., D. Bennett, A. Mangan, L. Stinson, K. Wilkins, T. Gallo,
-L. Pejchar. <strong>2017</strong>. The Paradox of the Carnivorous
-Conservationist [book review]. Biological Conservation. 205:11-112. <a
-href="publications/Riedl-et-al-2016-book-review.pdf">PDF</a></p>
-<p>Gallo, T., L.T. Stinson, L. Pejchar. <strong>2016</strong>.
-Pinyon-juniper removal has long-term effects on mammals. Forest Ecology
-and Management 377:93-100. <a
-href="publications/Gallo-et-al.-2016.pdf">PDF</a></p>
-<p>Gallo, T. and L. Pejchar. <strong>2016</strong>. Improving habitat
-for game animals has mixed consequences for biodiversity conservation.
-Biological Conservation 197:47:52. <a
-href="publications/gallo_biocon_review.pdf">PDF</a></p>
-<p>Bombaci, S., C. Farr, T. Gallo, A. Mangan, L. Stinson, M. Kaushik, L.
-Pejchar. <strong>2015</strong>. Using Twitter to communicate
-conservation science beyond professional conferences. Conservation
-Biology 30:216-225. <a
-href="publications/Bombaci_etal_2015_Twitter.pdf">PDF</a></p>
-<p>Gallo. T. and D. Waitt. <strong>2011</strong>. Creating a successful
-citizen science model to detect and report invasive species. BioScience
-61:459-465. <a href="publications/Gallo_2011_Bioscience.pdf">PDF</a></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Herrera DJ, Cove MV, McShea WJ, Decker S, Flockhart DT, Moore SM, Gallo T. <strong>2022</strong>. Spatial and temporal overlap of domestic cats (<em>Felis catus</em>) and native urban wildlife. Frontiers in Ecology and Evolution 10:1048585. <a href="publications/Herrera_2022.pdf">PDF</a></p>
+<p>Gallo, T., M. Fidino, B. Gerber, A.A. Ahlers, J.L. Angstmann, M. Amaya, A.L. Concilio, D. Drake, D. Gray, E.W. Lehrer, M.H. Murray, T.J. Ryan, C.C. St. Clair, C.M. Salsbury, H.A. Sander, T. Stankowich, J. Williamson, J.A. Belaire, K. Simon, Seth B. Magle. <strong>2022</strong>. Mammals adjust diel activities across gradients of urbanization. eLife 11:e74756 <a href="publications/elife-74756-v2.pdf">PDF</a></p>
+<p>Herrera DJ, Cove MV, McShea WJ, Flockhart DT, Decker S, Moore SM, Gallo T. <strong>2022</strong>. Prey selection and predation behavior of free-roaming domestic cats (<em>Felis catus</em>) in an urban ecosystem: implications for urban cat management. Biological Conservation 268:109503 <a href="publications/herrera_etal_2022_BiolCon.pdf">PDF</a></p>
+<p>Fidino, M., Bender, J., Limbrick, K., Gallo, T., and Magle, S. B. <strong>2022</strong>. Strolling through a century: recreating historical bird surveys to explore 100 years of change in an urban bird community. American Naturalist 199:159-167 <a href="publications/Fidino_etal_StrollingThroughACentury.pdf">PDF</a></p>
+<p>Magle, S., Fidino, M., Sander, H., Rohnke, A. T., Larson, K. L., Gallo, T., Kay, C. A. M., Lehrer, E. W., Murray, M. H., Adalsteinsson, S. A., Ahlers, A. A., Anthonysamy, W. J. B., Gramza, A. R., Green, A. M., Jordan, M. J., Lewis, J., Long, R. A., MacDougall, B., Pendergast, M. E., Remine, K., Simon, K. C., Cassady St. Clair, C., Shier, C. J., Stankowich, T., Stevenson, C. J., Zellmer, A. J., and Schell, C. J. <strong>2021</strong>. Wealth and urbanization shape medium and large mammalian communities across North America. Global Change Biology 27: 5446-5459 <a href="publications/Magle_2021_et_al_GCB_luxury.pdf">PDF</a></p>
+<p>Collins, M., S.B. Magle, T. Gallo. <strong>2021</strong>. Global trends in urban wildlife ecology and conservation. Biological Conservation 26:109236 <a href="publications/Collins_Gallo_2021_BiolCons.pdf">PDF</a></p>
+<p>Lehrer, E.W, T. Gallo, M. Fidino, R.J. Kilgour, P.J. Wolff, S. Magle. <strong>2021</strong>. Urban bat occupancy is highly influenced by noise and the location of water: Considerations for nature-based urban planning. Landscape and Urban Planning 210:104063. <a href="publications/Lehrer_etal_2021_urban-bats.pdf">PDF</a></p>
+<p>Fidino, M., T. Gallo, E.W. Lehrer, M.H. Murray, C. Kay H.A. Sander, B. MacDougall, C.M. Salsbury, T.J. Ryan, J.L. Angstmann, J.A. Belaire, B. Dugelby, C. Schell, T. Stankowich, M. Amaya, D. Drake, S.H. Hursh, A.A. Ahlers, J. Williamson, L.M. Hartley, A.J. Zellmer, K. Simon, and S.B. Magle. <strong>2021</strong>. Landscape-scale differences among cities alter common species’ responses to urbanization. Ecological Applications 31:e02253. <a href="publications/fidino-et-al-occupancy-eap.pdf">PDF</a> | <a href="publications/eap.2292_coverphoto.pdf">COVER PHOTO</a></p>
+<p>Ritzel, K. and T. Gallo. <strong>2020</strong>. Behavior Change in Urban Mammals: A Systematic Review. Frontiers in Ecology and Evolution 8:576665. <a href="publications/Ritzel_Gallo_2020_FrontEcolEvol.pdf">PDF</a></p>
+<p>*Gallo, T., *M. Fidino, E.W. Lehrer, S. Magle. <strong>2019</strong>. Urbanization alters predator-avoidance behaviours. Journal of Animal Ecology 88:793-803. <a href="publications/Gallo_et_al-2019-Journal_of_Animal_Ecology.pdf">PDF</a> *Both authors contributed equally</p>
+<p>Potratz, E., J.S. Brown, T. Gallo, C. Anchor, R.M Santymire. <strong>2019</strong>. Effects of demography and urbanization on stress and body condition of urban white-tailed deer. Urban Ecosystems. <a href="publications/Potratz2019_Article_EffectsOfDemographyAndUrbaniza.pdf">PDF</a></p>
+<p>Magle, S.B., M. Fidino, E.W. Lehrer, T. Gallo, M.P. Mulligan, M.J. Ríos, A.A. Ahlers, J. Angstmann, A. Belaire, B. Dugelby, A. Gramza, L. Hartley, B. MacDougall, T. Ryan, C. Salsbury, H. Sander, C. Schell, K. Simon, D. Drake. <strong>2019</strong>. Advancing urban wildlife research through a multi-city collaboration. Frontiers in Ecology and the Environment 17:232-239. <a href="publications/Magle_etal_AdvancingUrbanWildlife.pdf">PDF</a></p>
+<p>Gallo, T. and M. Fidino. <strong>2018</strong>. Insight: Making wildlife welcome in urban areas. eLife 7:e41348. <a href="publications/eLife.41348.pdf">PDF</a></p>
+<p>Gallo, T., E.W. Lehrer, M. Fidino, R.J. Kilgour, P.J. Wolff, S. Magle. <strong>2018</strong>. Need for multiscale planning for conservation of urban bats. Conservation Biology 32:638-647. <a href="publications/Gallo_et_al-2018-Conservation_Biology.pdf">PDF</a></p>
+<p>Pejchar, L., T. Gallo, M. Hooten, G. Dailey. <strong>2018</strong>. Predicting effects of large-scale reforestation on native and exotic birds. Diversity and Distributions 24:811-819. <a href="publications/pejchar_dd.pdf">PDF</a></p>
+<p>Gallo, T., M. Fidino, E.W. Lehrer, S. Magle. <strong>2017</strong>. Mammal diversity and metacommunity dynamics in urban green spaces: implications for urban wildlife conservation. Ecological Applications 27:2330–2341. <a href="publications/galloetal_eap.pdf">PDF</a></p>
+<p>Gallo, T., L.T. Stinson, L. Pejchar. <strong>2017</strong>. Mitigation for energy development fails to mimic natural disturbance for birds and mammals. Biological Conservation. 212:39-47. <a href="publications/Gallo_et_al_2017_biolcons.pdf">PDF</a></p>
+<p>Gallo, T. and L. Pejchar. <strong>2017</strong>. Woodland reduction and long-term change in breeding bird communities. Journal of Wildlife Management 81:259-268. <a href="publications/gallo_jwmg.21188.pdf">PDF</a></p>
+<p>Farr, C., D. Bennett, S. Bombaci, T. Gallo, A. Mangan, T. Nogeire, H. Riedl. L. Stinson, K. Wilkins, L. Pejchar. <strong>2017</strong>. Addressing the gender gap in distinguished speakers at professional ecology conferences. Bioscience 67:464-468. <a href="publications/Farr_etal_2017_BioScience.pdf">PDF</a></p>
+<p>Bombaci, S., T. Gallo, L. Pejchar. <strong>2017</strong>. Small-scale woodland reduction practices have neutral or negative short-term effects on birds and small mammals. Rangeland Ecology and Management 70:363-373. <a href="publications/Bombaci_et_al_2017.pdf">PDF</a></p>
+<p>Miller, A., E. Goad, T. Gallo, L. Pejchar, L. Bailey, S. Reed. <strong>2017</strong>. The impact of exurban housing density on wintering birds. The Wilson Journal of Ornithology 129:85-97. <a href="publications/Miller-et-al.-2017-Exurban-birds.pdf">PDF</a></p>
+<p>Riedl, H., D. Bennett, A. Mangan, L. Stinson, K. Wilkins, T. Gallo, L. Pejchar. <strong>2017</strong>. The Paradox of the Carnivorous Conservationist [book review]. Biological Conservation 205:11-112. <a href="publications/Riedl-et-al-2016-book-review.pdf">PDF</a></p>
+<p>Gallo, T., L.T. Stinson, L. Pejchar. <strong>2016</strong>. Pinyon-juniper removal has long-term effects on mammals. Forest Ecology and Management 377:93-100. <a href="publications/Gallo-et-al.-2016.pdf">PDF</a></p>
+<p>Gallo, T. and L. Pejchar. <strong>2016</strong>. Improving habitat for game animals has mixed consequences for biodiversity conservation. Biological Conservation 197:47:52. <a href="publications/gallo_biocon_review.pdf">PDF</a></p>
+<p>Bombaci, S., C. Farr, T. Gallo, A. Mangan, L. Stinson, M. Kaushik, L. Pejchar. <strong>2015</strong>. Using Twitter to communicate conservation science beyond professional conferences. Conservation Biology 30:216-225. <a href="publications/Bombaci_etal_2015_Twitter.pdf">PDF</a></p>
+<p>Gallo. T. and D. Waitt. <strong>2011</strong>. Creating a successful citizen science model to detect and report invasive species. BioScience 61:459-465. <a href="publications/Gallo_2011_Bioscience.pdf">PDF</a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
