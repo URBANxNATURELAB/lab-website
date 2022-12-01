@@ -25,12 +25,14 @@ My teaching philosophy can be summed up in three words: inclusive, equal, and en
 
 3. **Engaging** – Feeling safe, welcome, and represented is my cornerstone to successful interaction with students. However, to encourage meaningful engagement with course content, I also incorporate readings from primary and popular literature to guide and stimulate discussion. Independent or group projects grounded in local ecosystems can also compliment learning in the classroom. As an urban ecologist, this approach is particularly well suited for more urban universities. Conducting projects in urban environments increases student knowledge about the natural world in which they spend their everyday lives, and promotes understanding and appreciation for the ecology of and in cities.
 
-### Classes that Travis Teaches:
+#### My teaching load at University of Maryland is still coming together. Stay tuned!
 
-**Applied Ecology:** Fall and Spring semesters
+### Classes that Travis has Taught:
 
-**Conservation Biology:** Fall and Spring semesters in odd years (2021, 2023, 2025)
+**Applied Ecology (GMU)**
 
-**Principles of Wildlife Ecology:** Spring semester in even years (2022, 2024, 2026)
+**Conservation Biology (GMU)**
 
-**#rstats for Natural and Social Sciences:** Fall semester in even years (2022, 2024, 2026)
+**Principles of Wildlife Ecology (GMU)**
+
+**#rstats for Natural and Social Sciences (GMU)**
