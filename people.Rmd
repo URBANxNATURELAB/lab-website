@@ -17,7 +17,7 @@ d-title, d-byline {
 
 ## Principal Investigators
 
-![](images/people/travis.JPG){width=50%}
+![](images/people/gallo_headshot.jpeg){width=50%}
 
 ### Travis Gallo, Assistant Professor
 [Google Scholar](https://scholar.google.com/citations?user=RaEz6G8AAAAJ&amp;hl=en){target="_blank"} | [Research Gate](https://www.researchgate.net/profile/Travis_Gallo){target="_blank"} | [CV](publications/2022-10-25_CV_Gallo.pdf)
