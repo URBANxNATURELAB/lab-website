@@ -20,13 +20,24 @@ d-title, d-byline {
 ![](images/people/gallo_headshot.jpeg){width=50%}
 
 ### Travis Gallo, Assistant Professor
-[Google Scholar](https://scholar.google.com/citations?user=RaEz6G8AAAAJ&amp;hl=en){target="_blank"} | [Research Gate](https://www.researchgate.net/profile/Travis_Gallo){target="_blank"} | [CV](publications/2023-01-05_CV_Gallo.pdf)
+[Google Scholar](https://scholar.google.com/citations?user=RaEz6G8AAAAJ&amp;hl=en){target="_blank"} | [Research Gate](https://www.researchgate.net/profile/Travis_Gallo){target="_blank"} | [CV](publications/2023-01-05_CV_Gallo.pdf) | [GitHub](https://github.com/TravisGallo)
 
 Travis Gallo is an Assistant Professor in Urban Ecology and Conservation and is the lab PI. Travis works to understand how urban environments shape species distributions, populations, communities, and behaviors. The goal of his research is to provide evidence-based solutions that simultaneously conserve biological diversity and improve the lives of urban residents.
 
+
+## Postdoctoral Scholars
+
+![](images/people/gabby.jpeg){width=30%}
+
+### Gabby Palomo, Postdoctoral Researcher
+
+[Gabby's personal website](https://gabspalomo.github.io/)
+
+I am a postdoctoral researcher working on a 2-year research project to understand potential areas of interactions between humans and white-tailed deer using camera traps and human mobility data across multiple US cities. Deer are a species of interest in understanding spillover risk between humans and wildlife since multiple studies have identified SARS-CoV-2 infections in white-tailed deer. I got my PhD from the University of Nebraska Lincoln in 2022, working with Andrew J Tyre (advisor). My background is in carnivore ecology, specifically ocelot populations in Guatemala. I am interested in studying the impacts of human activities on wildlife and their effects on population dynamics, behavior, and wildlife-habitat relationships. However, I spend so much time learning about Bayesian models that I'm starting to question my priors in ecology. I'm originally from Guatemala and have previously worked in natural history collections, teaching undergraduate-level classes, and orchid and bromeliad horticulture. 
+
 ## Graduate Students
 
-![](images/people/krista_shires.jpeg){width=50%}
+![](images/people/krista_shires.jpeg){width=40%}
 
 ### Krista Shires, Ph.D. Candidate
 
@@ -34,7 +45,7 @@ I am a PhD student in Environmental Science and Policy with a background in Psyc
 
 <br>
 
-![](images/people/merri_collins.jpeg){width=50%}
+![](images/people/merri_collins.jpeg){width=40%}
 
 ### Merri Collins, Ph.D. Candidate
 
@@ -42,7 +53,7 @@ I am a graduate student in the Environmental Science and Policy Program at Georg
 
 <br>
 
-![](images/people/dan_herrera.jpg){width=50%}
+![](images/people/dan_herrera.jpg){width=40%}
 
 ### Dan Herrera, Ph.D. Student
 
@@ -52,7 +63,7 @@ I am a graduate student in Environmental Science and Technology at the Universit
 
 <br>
 
-![](images/people/adampekor.jpeg){width=50%}
+![](images/people/adampekor.jpeg){width=40%}
 
 ### Adam Pekor, Ph.D. Student
 
@@ -60,7 +71,7 @@ I am a graduate student in Environmental Science and Technology with a backgroun
 
 <br>
 
-![](images/people/kay.jpg){width=50%}
+![](images/people/kay.jpg){width=40%}
 
 ### Kay Pontarelli, M.S. Student
 
@@ -68,7 +79,7 @@ I’m a M.S graduate student in the Environmental Science and Policy Program at 
 
 <br>
 
-![](images/people/hannah_wood.jpeg){width=50%}
+![](images/people/hannah_wood.jpeg){width=40%}
 
 
 ### Hannah Wood, M.S. Student
