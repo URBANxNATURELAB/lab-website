@@ -27,7 +27,7 @@ Travis Gallo is an Assistant Professor in Urban Ecology and Conservation and is 
 
 ## Postdoctoral Scholars
 
-![](images/people/gabby.jpeg){width=30%}
+![](images/people/gabby.jpeg){width=40%}
 
 ### Gabby Palomo, Postdoctoral Researcher
 
@@ -89,13 +89,19 @@ I am currently pursuing a Master’s degree in environmental science with a conc
 
 ## Undergraduate Students
 
-![](images/people/Abdullah.png){width=35%}
+![](images/people/Abdullah.png){width=40%}
 
 ### Jishan Chowdhury, Research Assistant
 
 I am an undergrad student in the Environmental Science And Technology program at the University Of Maryland with a concentration in Ecological Tech Design. I have always been very passionate about the environment and how humans affect the environment. My dream is to see an environmently friendly world.
 
+<br>
 
+![](images/people/LaraAbedin.jpeg){width=40%}
+
+### Lara Abedin, Research Assistant
+
+I'm an undergraduate student majoring in Environmental Science and Policy, with a concentration in Biodiversity and Conservation Biology. I love learning about ecology and how different organisms play an integral role to the overall health of an ecosystem. I am interested in conservation and finding sustainable solutions to current environmental problems.
 
 
 ## Lab Alumni
