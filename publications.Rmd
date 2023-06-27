@@ -17,6 +17,8 @@ d-title, d-byline {
 
 # Publications
 
+Cervantes AM, RL Schooley, EW Lehrer, T Gallo, ML Allen, M Fidino, SB Magle. **2023**. Carnivore coexistence in Chicago: niche partitioning of coyotes and red foxes. Urban Ecosystems. [PDF](publications/Cervantes_etal_UE.pdf)
+
 Herrera DJ, Cove MV, McShea WJ, Decker S, Flockhart DT, Moore SM, Gallo T. **2022**. Spatial and temporal overlap of domestic cats (*Felis catus*) and native urban wildlife. Frontiers in Ecology and Evolution 10:1048585. [PDF](publications/Herrera_2022.pdf)
 
 Gallo, T., M. Fidino, B. Gerber, A.A. Ahlers, J.L. Angstmann, M. Amaya, A.L. Concilio, D. Drake, D. Gray, E.W. Lehrer, M.H. Murray, T.J. Ryan, C.C. St. Clair, C.M. Salsbury, H.A. Sander, T. Stankowich, J. Williamson, J.A. Belaire, K. Simon, Seth B. Magle. **2022**. Mammals adjust diel activities across gradients of urbanization. eLife 11:e74756 [PDF](publications/elife-74756-v2.pdf)
