@@ -41,7 +41,7 @@ I am a postdoctoral researcher working on a 2-year research project to understan
 
 ### Merri Collins, Ph.D. Candidate
 
-I am a graduate student in  Environmental Science and Technology at the University of Maryland. I have worked with a variety of species in past positions as a wildlife conservation biologist, everything from herpetofauna to marine mammals. I am interested in human/wildlife conflict mitigation, understanding drivers of local habitat and species losses, and how we can reduce these through practical application and management. During my PhD I started the National Capital’s first large-scale, and long-term urban wildlife monitoring project.
+I am a graduate student in Environmental Science and Technology at the University of Maryland. I have worked with a variety of species in past positions as a wildlife conservation biologist, everything from herpetofauna to marine mammals. I am interested in human/wildlife conflict mitigation, understanding drivers of local habitat and species losses, and how we can reduce these through practical application and management. During my PhD I started the National Capital’s first large-scale, and long-term urban wildlife monitoring project.
 
 <br>
 
@@ -60,6 +60,15 @@ I am a graduate student in Environmental Science and Technology at the Universit
 ### Adam Pekor, Ph.D. Student
 
 I am a graduate student in Environmental Science and Technology with a background in law. My research focuses on human-wildlife coexistence and lion population connectivity in northern Tanzania. Working with a local conservation organization called KopeLion, I helped develop a conservation incentive payment program to mitigate human-lion conflict in a key protected area. I am now studying the impacts of this program and lion population connectivity across the region to help understand the most effective tools for engaging communities, facilitating connectivity, and promoting coexistence in shared landscapes.
+
+<br>
+
+![](images/people/Matthew_Payne.png){width=40%}
+
+### Matthew Payne, M.S. Student
+
+I am a graduate student in Environmental Science and Technology at the University of Maryland. I received my bachelor’s degree in Wildlife and Fisheries from Frostburg State University. I am currently working as a naturalist with the Maryland-National Capital Park and Planning Commission. I have several years of experience conducting species richness and abundance studies at Jug Bay Wetlands Sanctuary and its surrounding properties in Anne Arundel County. My primary graduate research focus is understanding how urbanization and other aspects of humanity can impact the movements, behavior, and populations of mammals in urban environments.
+
 
 ## Undergraduate Students
 
