@@ -17,31 +17,37 @@ d-title, d-byline {
 
 # Publications
 
-Cervantes AM, RL Schooley, EW Lehrer, T Gallo, ML Allen, M Fidino, SB Magle. **2023**. Carnivore coexistence in Chicago: niche partitioning of coyotes and red foxes. Urban Ecosystems. [PDF](publications/Cervantes_etal_UE.pdf)
+Authors that are <u>**bold and underlined**</u> indicate URBANxNATURE Lab members
 
-Herrera DJ, Cove MV, McShea WJ, Decker S, Flockhart DT, Moore SM, Gallo T. **2022**. Spatial and temporal overlap of domestic cats (*Felis catus*) and native urban wildlife. Frontiers in Ecology and Evolution 10:1048585. [PDF](publications/Herrera_2022.pdf)
+Haight, Jeffrey D.; Sharon J. Hall; Mason Fidino; Solny A. Adalsteinsson; Adam A. Ahlers; Julia Angstmann; Whitney J. B. Anthonysamy; Elizabeth Biro; <u>**Merri K. Collins**</u>; Barbara Dugelby; <u>**Travis Gallo**</u>; Austin M. Green; Laura Hartley; Mark J. Jordan; Cria A. M. Kay; Elizabeth W. Lehrer; Robert A. Long; Brandon MacDougall; Seth B. Magle; Darren E. Minier; Chris Mowry; Maureen Murray; Kristina Nininger; Mary E. Pendergast; Katie R. Remine; Travis Ryan; Carmen Salsbury; Christopher J. Schell; Çagan Șekercioğlu; Catherine J. Shier; Kelly C. Simon; Colleen C. St. Clair; Theodore Stankowich; Cassondra J. Stevenson; Lisa Wayne; Dave Will; J. Williamson; Larry Wilson; Amanda J. Zellmer; Jesse S. Lewis 2023. Urbanization, climate, and species traits shape mammal communities from local to continental scales. Nature Ecology & Evolution [PDF](publications/Haight_et_al-2023-Nature_Ecology_&_Evolution.pdf)
 
-Gallo, T., M. Fidino, B. Gerber, A.A. Ahlers, J.L. Angstmann, M. Amaya, A.L. Concilio, D. Drake, D. Gray, E.W. Lehrer, M.H. Murray, T.J. Ryan, C.C. St. Clair, C.M. Salsbury, H.A. Sander, T. Stankowich, J. Williamson, J.A. Belaire, K. Simon, Seth B. Magle. **2022**. Mammals adjust diel activities across gradients of urbanization. eLife 11:e74756 [PDF](publications/elife-74756-v2.pdf)
+Cervantes AM, RL Schooley, EW Lehrer, <u>**T Gallo**</u>, ML Allen, M Fidino, SB Magle. 2023. Carnivore coexistence in Chicago: niche partitioning of coyotes and red foxes. Urban Ecosystems. [PDF](publications/Cervantes_etal_UE.pdf)
 
-Herrera DJ, Cove MV, McShea WJ, Flockhart DT, Decker S, Moore SM, Gallo T. **2022**. Prey selection and predation behavior of free-roaming domestic cats (*Felis catus*) in an urban ecosystem: implications for urban cat management. Biological Conservation 268:109503 [PDF](publications/herrera_etal_2022_BiolCon.pdf)
+<u>**Herrera DJ**</u>, Cove MV, McShea WJ, Decker S, Flockhart DT, Moore SM, <u>**Gallo T**</u>. 2022. Spatial and temporal overlap of domestic cats (*Felis catus*) and native urban wildlife. Frontiers in Ecology and Evolution 10:1048585. [PDF](publications/Herrera_2022.pdf)
 
-Fidino, M., Bender, J., Limbrick, K., Gallo, T., and Magle, S. B. **2022**. Strolling through a century: recreating historical bird surveys to explore 100 years of change in an urban bird community. American Naturalist 199:159-167 [PDF](publications/Fidino_etal_StrollingThroughACentury.pdf)
+<u>**Gallo, T.**</u>, M. Fidino, B. Gerber, A.A. Ahlers, J.L. Angstmann, M. Amaya, A.L. Concilio, D. Drake, D. Gray, E.W. Lehrer, M.H. Murray, T.J. Ryan, C.C. St. Clair, C.M. Salsbury, H.A. Sander, T. Stankowich, J. Williamson, J.A. Belaire, K. Simon, Seth B. Magle. 2022. Mammals adjust diel activities across gradients of urbanization. eLife 11:e74756 [PDF](publications/elife-74756-v2.pdf)
 
-Magle, S., Fidino, M., Sander, H., Rohnke, A. T., Larson, K. L., Gallo, T., Kay, C. A. M., Lehrer, E. W., Murray, M. H., Adalsteinsson, S. A., Ahlers, A. A., Anthonysamy, W. J. B., Gramza, A. R., Green, A. M., Jordan, M. J., Lewis, J., Long, R. A., MacDougall, B., Pendergast, M. E., Remine, K., Simon, K. C., Cassady St. Clair, C., Shier, C. J., Stankowich, T., Stevenson, C. J., Zellmer, A. J., and Schell, C. J. **2021**. Wealth and urbanization shape medium and large mammalian communities across North America. Global Change Biology 27: 5446-5459 [PDF](publications/Magle_2021_et_al_GCB_luxury.pdf)
+<u>**Herrera DJ**</u>, Cove MV, McShea WJ, Flockhart DT, Decker S, Moore SM, <u>**Gallo T.**</u> 2022. Prey selection and predation behavior of free-roaming domestic cats (*Felis catus*) in an urban ecosystem: implications for urban cat management. Biological Conservation 268:109503 [PDF](publications/herrera_etal_2022_BiolCon.pdf)
 
-Collins, M., S.B. Magle, T. Gallo. **2021**. Global trends in urban wildlife ecology and conservation. Biological Conservation 26:109236 [PDF](publications/Collins_Gallo_2021_BiolCons.pdf)
+Fidino, M., Bender, J., Limbrick, K., <u>**Gallo, T.**</u>, and Magle, S. B. 2022. Strolling through a century: recreating historical bird surveys to explore 100 years of change in an urban bird community. American Naturalist 199:159-167 [PDF](publications/Fidino_etal_StrollingThroughACentury.pdf)
 
-Lehrer, E.W, T. Gallo, M. Fidino, R.J. Kilgour, P.J. Wolff, S. Magle. **2021**. Urban bat occupancy is highly influenced by noise and the location of water: Considerations for nature-based urban planning. Landscape and Urban Planning 210:104063. [PDF](publications/Lehrer_etal_2021_urban-bats.pdf)
+Magle, S., Fidino, M., Sander, H., Rohnke, A. T., Larson, K. L., <u>**Gallo, T.**</u>, Kay, C. A. M., Lehrer, E. W., Murray, M. H., Adalsteinsson, S. A., Ahlers, A. A., Anthonysamy, W. J. B., Gramza, A. R., Green, A. M., Jordan, M. J., Lewis, J., Long, R. A., MacDougall, B., Pendergast, M. E., Remine, K., Simon, K. C., Cassady St. Clair, C., Shier, C. J., Stankowich, T., Stevenson, C. J., Zellmer, A. J., and Schell, C. J. 2021. Wealth and urbanization shape medium and large mammalian communities across North America. Global Change Biology 27: 5446-5459 [PDF](publications/Magle_2021_et_al_GCB_luxury.pdf)
 
-Fidino, M., T. Gallo, E.W. Lehrer, M.H. Murray, C. Kay H.A. Sander, B. MacDougall, C.M. Salsbury, T.J. Ryan, J.L. Angstmann, J.A. Belaire, B. Dugelby, C. Schell, T. Stankowich, M. Amaya, D. Drake, S.H. Hursh, A.A. Ahlers, J. Williamson, L.M. Hartley, A.J. Zellmer, K. Simon, and S.B. Magle. **2021**. Landscape-scale differences among cities alter common species’ responses to urbanization. Ecological Applications 31:e02253. [PDF](publications/fidino-et-al-occupancy-eap.pdf) | [COVER PHOTO](publications/eap.2292_coverphoto.pdf)
+<u>**Collins, M.**</u>, S.B. Magle, <u>**T. Gallo**</u>. 2021. Global trends in urban wildlife ecology and conservation. Biological Conservation 26:109236 [PDF](publications/Collins_Gallo_2021_BiolCons.pdf)
 
-Ritzel, K. and T. Gallo. **2020**. Behavior Change in Urban Mammals: A Systematic Review. Frontiers in Ecology and Evolution 8:576665. [PDF](publications/Ritzel_Gallo_2020_FrontEcolEvol.pdf)
+Lehrer, E.W, <u>**T. Gallo**</u>, M. Fidino, R.J. Kilgour, P.J. Wolff, S. Magle. 2021. Urban bat occupancy is highly influenced by noise and the location of water: Considerations for nature-based urban planning. Landscape and Urban Planning 210:104063. [PDF](publications/Lehrer_etal_2021_urban-bats.pdf)
 
-\*Gallo, T., \*M. Fidino, E.W. Lehrer, S. Magle. **2019**. Urbanization alters predator-avoidance behaviours. Journal of Animal Ecology 88:793-803. [PDF](publications/Gallo_et_al-2019-Journal_of_Animal_Ecology.pdf)  \*Both authors contributed equally
+Fidino, M., <u>**T. Gallo**</u>, E.W. Lehrer, M.H. Murray, C. Kay H.A. Sander, B. MacDougall, C.M. Salsbury, T.J. Ryan, J.L. Angstmann, J.A. Belaire, B. Dugelby, C. Schell, T. Stankowich, M. Amaya, D. Drake, S.H. Hursh, A.A. Ahlers, J. Williamson, L.M. Hartley, A.J. Zellmer, K. Simon, and S.B. Magle. 2021. Landscape-scale differences among cities alter common species’ responses to urbanization. Ecological Applications 31:e02253. [PDF](publications/fidino-et-al-occupancy-eap.pdf) | [COVER PHOTO](publications/eap.2292_coverphoto.pdf)
 
-Potratz, E., J.S. Brown, T. Gallo, C. Anchor, R.M Santymire. **2019**. Effects of demography and urbanization on stress and body condition of urban white-tailed deer. Urban Ecosystems. [PDF](publications/Potratz2019_Article_EffectsOfDemographyAndUrbaniza.pdf)
+<u>**Ritzel, K.**</u> and <u>**T. Gallo**</u>. 2020. Behavior Change in Urban Mammals: A Systematic Review. Frontiers in Ecology and Evolution 8:576665. [PDF](publications/Ritzel_Gallo_2020_FrontEcolEvol.pdf)
 
-Magle, S.B., M. Fidino, E.W. Lehrer, T. Gallo, M.P. Mulligan, M.J. Ríos, A.A. Ahlers, J. Angstmann, A. Belaire, B. Dugelby, A. Gramza, L. Hartley, B. MacDougall, T. Ryan, C. Salsbury, H. Sander, C. Schell, K. Simon, D. Drake. **2019**. Advancing urban wildlife research through a multi-city collaboration. Frontiers in Ecology and the Environment 17:232-239. [PDF](publications/Magle_etal_AdvancingUrbanWildlife.pdf)
+<u>**\*Gallo**</u>, T., \*M. Fidino, E.W. Lehrer, S. Magle. 2019. Urbanization alters predator-avoidance behaviours. Journal of Animal Ecology 88:793-803. [PDF](publications/Gallo_et_al-2019-Journal_of_Animal_Ecology.pdf)  \*Both authors contributed equally
+
+Potratz, E., J.S. Brown, <u>**T. Gallo**</u>, C. Anchor, R.M Santymire. 2019. Effects of demography and urbanization on stress and body condition of urban white-tailed deer. Urban Ecosystems. [PDF](publications/Potratz2019_Article_EffectsOfDemographyAndUrbaniza.pdf)
+
+Magle, S.B., M. Fidino, E.W. Lehrer, <u>**T. Gallo**</u>, M.P. Mulligan, M.J. Ríos, A.A. Ahlers, J. Angstmann, A. Belaire, B. Dugelby, A. Gramza, L. Hartley, B. MacDougall, T. Ryan, C. Salsbury, H. Sander, C. Schell, K. Simon, D. Drake. 2019. Advancing urban wildlife research through a multi-city collaboration. Frontiers in Ecology and the Environment 17:232-239. [PDF](publications/Magle_etal_AdvancingUrbanWildlife.pdf)
+
+<u>URBANxNATURE Lab Established in 2019</u>
 
 Gallo, T. and M. Fidino. **2018**. Insight: Making wildlife welcome in urban areas. eLife 7:e41348. [PDF](publications/eLife.41348.pdf)
 
