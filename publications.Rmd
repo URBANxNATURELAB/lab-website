@@ -19,6 +19,10 @@ d-title, d-byline {
 
 Authors that are <u>**bold and underlined**</u> indicate URBANxNATURE Lab members
 
+Anderson, T., <u>**D. Herrera**</u>, F. Mireku, K. Barner, A. Kokkinakis, H. Dao, A. Webber, A.D. Merida, <u>**T. Gallo**</u>, M. Pierobon. 2023. Geographical Variation in Social Determinants of Female Breast Cancer Mortality Across US Counties. JAMA Network Open [PDF](publications/anderson_2023.pdf)
+
+Schell CJ, NC Harris, S Des Roches, <u>**T Gallo**</u>, M Lambert. 2023. Biodiversity for the People: Future Directions for Urban Biodiversity Conservation in Urban Biodiversity and Equity: Justice-Centered Conservation in Cities. Oxford University Press.
+
 Haight, Jeffrey D.; Sharon J. Hall; Mason Fidino; Solny A. Adalsteinsson; Adam A. Ahlers; Julia Angstmann; Whitney J. B. Anthonysamy; Elizabeth Biro; <u>**Merri K. Collins**</u>; Barbara Dugelby; <u>**Travis Gallo**</u>; Austin M. Green; Laura Hartley; Mark J. Jordan; Cria A. M. Kay; Elizabeth W. Lehrer; Robert A. Long; Brandon MacDougall; Seth B. Magle; Darren E. Minier; Chris Mowry; Maureen Murray; Kristina Nininger; Mary E. Pendergast; Katie R. Remine; Travis Ryan; Carmen Salsbury; Christopher J. Schell; Çagan Șekercioğlu; Catherine J. Shier; Kelly C. Simon; Colleen C. St. Clair; Theodore Stankowich; Cassondra J. Stevenson; Lisa Wayne; Dave Will; J. Williamson; Larry Wilson; Amanda J. Zellmer; Jesse S. Lewis 2023. Urbanization, climate, and species traits shape mammal communities from local to continental scales. Nature Ecology & Evolution [PDF](publications/Haight_et_al-2023-Nature_Ecology_&_Evolution.pdf)
 
 Cervantes AM, RL Schooley, EW Lehrer, <u>**T Gallo**</u>, ML Allen, M Fidino, SB Magle. 2023. Carnivore coexistence in Chicago: niche partitioning of coyotes and red foxes. Urban Ecosystems. [PDF](publications/Cervantes_etal_UE.pdf)
