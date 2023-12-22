@@ -48,3 +48,7 @@ knitr::include_graphics("images/projects/Figure_3.jpeg")
 The potential for zoonotic spillover is highest for humans who come into frequent and direct contact with wildlife and is especially high in urban environments due to greater densities of both humans and wildlife. The nature of human-wildlife interactions in urban environments has been understudied compared to that in rural settings (among hunters and captive animal industries). Thus, understanding the frequency and nature of human-wildlife interactions in urban environments and the associated risks of zoonotic disease spillover is critical to identify effective interventions to prevent transmission of zoonotic diseases at the human-wildlife interface.
 
 As the project progresses we will update this page and include some interactive maps of deer moving through the city. In the meantime, feel free to shoot us an email if you have any other questions.
+
+````{r, fig.align = "center", out.width = "100%"}
+knitr::include_graphics("images/projects/group_logos.png")
+```
