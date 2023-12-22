@@ -15,11 +15,11 @@ d-title, d-byline {
 
 <br>
 
-````{r, fig.align = "center", out.width = "60%"}
+````{r, fig.align = "center", out.width = "75%"}
 knitr::include_graphics("images/projects/deer.JPG")
 ```
 
-# Urban Deer Movement and Disease Dynamics
+# Urban Deer Movement & Disease Dynamics
 
 White-tailed deer are common, widespread, and often found at high densities in urban and suburban areas. The high density of both people and deer in urban areas increases the potential for human-deer interactions, and thus the potential for disease transmission between them. The University of Maryland's URBANxNATURE Lab and Applied Spatial Wildlife Ecology Lab have collaborated with the U.S. Department of Agriculture, National Park Service, Washington D.C. Department of Energy and Environment, Fairfax County Park Authority, and Montgomery Parks to study the potential transmission of disease between humans and deer in urban settings where deer and human interactions are likely high. For this project we will be using SARS-CoV-2 as a case study.
  
