@@ -1,0 +1,20 @@
+---
+title: "Urban Deer Movement Study"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+d-title, d-byline {
+  display: none
+}
+</style>
+
+<br>
+
+## University of Maryland's Urban Deer Movement Study
+
+Test Language Here
