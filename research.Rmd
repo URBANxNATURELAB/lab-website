@@ -73,4 +73,15 @@ d-title, d-byline {
 </a>
 </div>
 
+<div>
+<a href = urban-deer-study.html>
+<div class="polaroid">
+<img src="images/projects/deer.JPG" alt="Deer" style="width:100%">
+<div class="container">
+<h4>Deer Movement Research</h4>
+</div>
+</div>
+</a>
+</div>
+
 </div>

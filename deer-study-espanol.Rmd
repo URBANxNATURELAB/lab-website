@@ -18,7 +18,8 @@ d-title, d-byline {
 ````{r, fig.align = "center", out.width = "75%"}
 knitr::include_graphics("images/projects/deer.JPG")
 ```
-<br>
+
+### **Para reportar un venado herido con collar, email tgallo@umd.edu y wildlife@umd.edu**
 
 [Click to read this page in English](https://urbanxnaturelab.com/urban-deer-study.html)
 

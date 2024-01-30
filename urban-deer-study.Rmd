@@ -19,7 +19,7 @@ d-title, d-byline {
 knitr::include_graphics("images/projects/deer.JPG")
 ```
 
-<br>
+### **To report an injured deer with a collar please email tgallo@umd.edu and wildlife@umd.edu**
 
 [Lea esta página en español](https://urbanxnaturelab.com/deer-study-espanol.html)
 
