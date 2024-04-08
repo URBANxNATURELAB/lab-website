@@ -17,7 +17,7 @@ d-title, d-byline {
 
 ## Teaching Philosophy
 
-My teaching philosophy can be summed up in three words: inclusive, equal, and engaging.
+My (Travis) teaching philosophy can be summed up in three words: inclusive, equal, and engaging.
 
 1. **Inclusive** – Universities are increasingly characterized by a diverse student body. I am committed to creating a classroom climate that promotes and supports inclusivity. For example, I invite guest lecturers that represent the diversity of the student body, as well as design the course content and delivery to consider students' backgrounds and areas of interests. Providing diverse role models at the classroom podium and within lecture materials engages students and reinforces the idea that they too can become part of the next generation of leaders – regardless of race, ethnicity, ability, socioeconomic status, gender identity, or sexual orientation.
 
@@ -27,7 +27,11 @@ My teaching philosophy can be summed up in three words: inclusive, equal, and en
 
 ### Classes that Travis Teaches:
 
-#### My teaching load at University of Maryland is still coming together. Stay tuned!
+**ENST 499T/698T: Data Management & Analyses for Environmental Science** (Spring)
 
-**ENST 499T/698T: Data Management & Analyses for Environmental Science** (Fall & Spring)
+**ENST 499A: Urban Ecology** (Coming Fall 2024, Fall moving forward)
+
+**ENST 699L: Hierarchical Modeling for Environmental Science** (Spring on even years)
+
+Travis has also taught courses in Conservation Biology, Applied Ecology, and Principles of Wildlife Management. Please reach out if any course materials may be beneficial to you.
 
