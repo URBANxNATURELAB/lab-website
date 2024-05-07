@@ -455,8 +455,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -567,9 +567,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: none !important;
   }
 
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
+    border-top: none;
   }
 
   d-appendix {
@@ -664,6 +676,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
   }
 
   d-article pre {
@@ -1425,6 +1442,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // create d-title
     $('.d-title').changeElementType('d-title');
 
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
@@ -1502,8 +1525,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('.distill-force-highlighting-css').parent().remove();
 
     // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
 
     // load distill framework
     load_distill_framework();
@@ -1529,12 +1553,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
         if (orcid_id) {
           var a = $('<a></a>');
           a.attr('href', 'https://orcid.org/' + orcid_id);
           var img = $('<img></img>');
           img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
           img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
           a.append(img);
           $(this).append(a);
@@ -2188,7 +2213,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2243,6 +2268,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-title">
 <h1>Publications</h1>
+
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2258,7 +2284,8 @@ d-title, d-byline {
 <p><br></p>
 <h1 id="publications">Publications</h1>
 <p>Authors that are <u><strong>bold and underlined</strong></u> indicate URBANxNATURE Lab members</p>
-<p>Fusco, N.A., J.P. Vanek, B.J. Cosentino, J.P. Gibbs, A.J. Blumenfeld, M.L. Allen, J. Boettner, K. Briggs, E.J. Carlen, <u><strong>M. Collins</strong></u>, C. Dennison, D. DiGiacopo, A-P.D. Picard, J. Edmonson, C. Fisher-Reid, R. Fyffe, <u><strong>T. Gallo</strong></u>, A. Grant, W. Harbold, S. Heard, D. Lafferty, R. Lehtinen, S. Marino, J.E. McDonald, A. Mortelliti, M. Murray, A. Newman, K. Oswald, C. Ott-Conn, J. Richardson, R. Rimbach, P. Salaman, M. Steele, M. Stothart, M.C. Urban, K. Vandergrift, S. Vanderluit, L. Vezina, and A. Caccone. In Press. Population genomic structure of a widespread, urban-dwelling mammal; The Eastern gray squirrel (<em>Sciurus carolinensis</em>). Molecular Ecology.</p>
+<p>Hila Shamon, Roi Maor, Michael V. Cove, Roland Kays, Jessie Adley, Peter D. Alexander, David N. Allen, Maximilian L. Allen, Cara L. Appel, Evan Barr, Erika L. Barthelmess, Carolina Baruzzi, Kelli Bashaw, Guillaume Bastille-Rousseau, Madison E. Baugh, Jerrold Belant, John F. Benson, Bethany A. Bespoyasny, Tori Bird, Daniel A. Bogan, LaRoy S. E. Brandt, Claire E. Bresnan, Jarred M. Brooke, Frances E. Buderman, Suzannah G. Buzzell, Amanda E. Cheeseman, M. Colter Chitwood, Petros Chrysafis, <u><strong>Merri K. Collins</strong></u>, D. Parks Collins, Justin A. Compton, L. Mike Conner, Olivia G. Cosby, Stephanie S. Coster, Benjamin Crawford, Anthony P. Crupi, Andrea K. Darracq, Miranda L. Davis, Brett A. DeGregorio, Kimberly L. Denningmann, Kyle D. Dougherty, Ace Driver, Andrew J. Edelman, E. Hance Ellington, Susan N. Ellis-Felege, Caroline N. Ellison, Jean E. Fantle-Lepczyk, Zach J. Farris, Jorie Favreau, Pilar Fernandez, M. Caitlin Fisher-Reid, Matthew C. Fitzpatrick, Elizabeth A. Flaherty, Tavis D. Forrester, Sarah R. Fritts, <u><strong>Travis Gallo</strong></u>, Brian D. Gerber, Sean T. Giery, Jessica L. Glasscock, Alex D. Gonatas, Anna C. Grady, Austin M. Green, Tremaine Gregory, Noel Griffin, Robert H. Hagen, Christopher P. Hansen, Lonnie P. Hansen, Steven C. Hasstedt, Haydée Hernández-Yáñez, <u><strong>Daniel J. Herrera</strong></u>, Robert V. Horan III, Victoria L. Jackson, Luanne Johnson, Mark J. Jordan, Willaine Kahano, Joseph Kiser, Travis W. Knowles, Molly M. Koeck, Caroline Koroly, Kellie M. Kuhn, Erin K. Kuprewicz, Diana J. R. Lafferty, Scott D. LaPoint, Marcus Lashley, Richard G. Lathrop, Thomas E. Lee Jr., Christopher A. Lepczyk, Damon B. Lesmeister, Jason V. Lombardi, Robert A. Long, Robert C. Lonsinger, Paula MacKay, Sean P. Maher, David S. Mason, Joshua J. Millspaugh, Remington J. Moll, Jessica B. Moon, Alessio Mortelliti, Alexis M. Mychajliw, Christopher M. Nagy, Sean A. Neiswenter, Dana L. Nelson, Claire E. Nemes, Clayton K. Nielsen, Elizabeth Olson, M. Teague O’Mara, Brian J. O’Neill, Blake R. Page, Elizabeth Parsons, Brent S. Pease, Mary E. Pendergast, Mike Proctor, Heather Quick, Christine C. Rega-Brodsky, Michael S. Rentz, Kylie Rezendes, Daric Rich, Derek R. Risch, Andrea Romero, Brigit R. Rooney, Christopher T. Rota, Corey A. Samples, Christopher M. Schalk, Çağan H. Sekercioğlu, Maksim Sergeyev, Austin B. Smith, Daniel S. Smith, Jinelle H. Sperry, Jennifer L. Stenglein, Michael K. Stokes, Johnathon S. Stutzman, Kimberly R. Todd, John P. Vanek, Wren Varga, Zachary M. Wardle, Stephen L. Webb, Nathaniel H. Wehr, Laura S. Whipple, Christopher A. Whittier, Jane S. Widness, Jacque Williamson, Andrew M. Wilson, Alexander J. Wolf, Marketa Zimova, Adam S. Zorn, William J. McShea. 2024. SNAPSHOT USA 2021: A Third Coordinated National Camera Trap Survey of the United States.” Ecology: e4318 <a href="publications/Ecology_2024_SNAPSHOT.pdf">PDF</a></p>
+<p>Fusco, N.A., J.P. Vanek, B.J. Cosentino, J.P. Gibbs, A.J. Blumenfeld, M.L. Allen, J. Boettner, K. Briggs, E.J. Carlen, <u><strong>M. Collins</strong></u>, C. Dennison, D. DiGiacopo, A-P.D. Picard, J. Edmonson, C. Fisher-Reid, R. Fyffe, <u><strong>T. Gallo</strong></u>, A. Grant, W. Harbold, S. Heard, D. Lafferty, R. Lehtinen, S. Marino, J.E. McDonald, A. Mortelliti, M. Murray, A. Newman, K. Oswald, C. Ott-Conn, J. Richardson, R. Rimbach, P. Salaman, M. Steele, M. Stothart, M.C. Urban, K. Vandergrift, S. Vanderluit, L. Vezina, and A. Caccone. 2023. Population genomic structure of a widespread, urban-dwelling mammal; The Eastern gray squirrel (<em>Sciurus carolinensis</em>). Molecular Ecology, 33, e17230 <a href="publications/MolecularEcology_2023_Fusco.pdf">PDF</a></p>
 <p>Anderson, T., <u><strong>D. Herrera</strong></u>, F. Mireku, K. Barner, A. Kokkinakis, H. Dao, A. Webber, A.D. Merida, <u><strong>T. Gallo</strong></u>, M. Pierobon. 2023. Geographical Variation in Social Determinants of Female Breast Cancer Mortality Across US Counties. JAMA Network Open 6(9):e2333618 <a href="publications/anderson_2023.pdf">PDF</a></p>
 <p>Schell CJ, NC Harris, S Des Roches, <u><strong>T Gallo</strong></u>, M Lambert. 2023. Biodiversity for the People: Future Directions for Urban Biodiversity Conservation in Urban Biodiversity and Equity: Justice-Centered Conservation in Cities. Oxford University Press.</p>
 <p>Haight, Jeffrey D.; Sharon J. Hall; Mason Fidino; Solny A. Adalsteinsson; Adam A. Ahlers; Julia Angstmann; Whitney J. B. Anthonysamy; Elizabeth Biro; <u><strong>Merri K. Collins</strong></u>; Barbara Dugelby; <u><strong>Travis Gallo</strong></u>; Austin M. Green; Laura Hartley; Mark J. Jordan; Cria A. M. Kay; Elizabeth W. Lehrer; Robert A. Long; Brandon MacDougall; Seth B. Magle; Darren E. Minier; Chris Mowry; Maureen Murray; Kristina Nininger; Mary E. Pendergast; Katie R. Remine; Travis Ryan; Carmen Salsbury; Christopher J. Schell; Çagan Șekercioğlu; Catherine J. Shier; Kelly C. Simon; Colleen C. St. Clair; Theodore Stankowich; Cassondra J. Stevenson; Lisa Wayne; Dave Will; J. Williamson; Larry Wilson; Amanda J. Zellmer; Jesse S. Lewis 2023. Urbanization, climate, and species traits shape mammal communities from local to continental scales. Nature Ecology &amp; Evolution 7, 1654–1666 <a href="publications/Haight_et_al-2023-Nature_Ecology_&amp;_Evolution.pdf">PDF</a></p>
