@@ -37,14 +37,6 @@ I am a postdoctoral researcher working on a 2-year research project to understan
 
 ## Graduate Students
 
-![](images/people/merri_collins.jpeg){width=40%}
-
-### Merri Collins, Ph.D. Candidate
-
-I am a graduate student in Environmental Science and Technology at the University of Maryland. I have worked with a variety of species in past positions as a wildlife conservation biologist, everything from herpetofauna to marine mammals. I am interested in human/wildlife conflict mitigation, understanding drivers of local habitat and species losses, and how we can reduce these through practical application and management. During my PhD I started the National Capital’s first large-scale, and long-term urban wildlife monitoring project.
-
-<br>
-
 ![](images/people/dan_herrera.jpg){width=40%}
 
 ### Dan Herrera, Ph.D. Candidate
@@ -99,11 +91,13 @@ I'm an undergraduate student majoring in Environmental Science and Policy, with 
 
 ### Graduate Students:
 
+**Merri Collins** - Ph.D. (2020-2024). Currently at Appalachian Headwaters
+
 **Alexia Yau** - M.S. (2021-2024). Currently at USFWS
 
 **Krista Shires** - Ph.D. (2020-2023). Currently at George Mason University
 
-**Hannah Wood** - M.S. (2021-2023). Currently at Children'S Science Center, Fairfax
+**Hannah Wood** - M.S. (2021-2023). Currently at Children's Science Center, Fairfax
 
 **Kay Pontarelli** - M.S. (2021-2023). Currently at U.S. Army Aberdeen Proving Ground
 
