@@ -84,15 +84,7 @@ I am a graduate student in Environmental Science and Technology at the Universit
 
 ### Jishan Chowdhury, Research Assistant
 
-I am an undergrad student in the Environmental Science And Technology program at the University Of Maryland with a concentration in Ecological Tech Design. I have always been very passionate about the environment and how humans affect the environment. My dream is to see an environmently friendly world.
-
-<br>
-
-![](images/people/LaraAbedin.jpeg){width=40%}
-
-### Lara Abedin, Research Assistant
-
-I'm an undergraduate student majoring in Environmental Science and Policy, with a concentration in Biodiversity and Conservation Biology. I love learning about ecology and how different organisms play an integral role to the overall health of an ecosystem. I am interested in conservation and finding sustainable solutions to current environmental problems.
+I am an undergrad student in the Environmental Science And Technology program at the University Of Maryland with a concentration in Ecological Tech Design. I have always been very passionate about the environment and how humans affect the environment. My dream is to see an environmentally friendly world.
 
 
 ## Lab Alumni
@@ -116,6 +108,8 @@ I'm an undergraduate student majoring in Environmental Science and Policy, with 
 **Nick Moreno** - Ph.D. student on rotation (2020)
 
 ### Undergraduate Students:
+
+**Lara Abedin** - Undergraduate Research Assistant (2022-2024)
 
 **Faith Kruger** - Undergraduate Research Assistant (2020-2022)
 
