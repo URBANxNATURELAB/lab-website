@@ -35,6 +35,15 @@ Travis Gallo is an Assistant Professor in Urban Ecology and Conservation and is 
 
 I am a postdoctoral researcher working on a 2-year research project to understand potential areas of interactions between humans and white-tailed deer using camera traps and human mobility data across multiple US cities. Deer are a species of interest in understanding spillover risk between humans and wildlife since multiple studies have identified SARS-CoV-2 infections in white-tailed deer. I got my PhD from the University of Nebraska Lincoln in 2022, working with Andrew J Tyre (advisor). My background is in carnivore ecology, specifically ocelot populations in Guatemala. I am interested in studying the impacts of human activities on wildlife and their effects on population dynamics, behavior, and wildlife-habitat relationships. However, I spend so much time learning about Bayesian models that I'm starting to question my priors in ecology. I'm originally from Guatemala and have previously worked in natural history collections, teaching undergraduate-level classes, and orchid and bromeliad horticulture. 
 
+<br>
+
+![](images/people/zehidul_hussain.jpg){width=40%}
+
+### Zehidul Hussain, Postdoctoral Researcher
+
+I am a postdoctoral researcher interested in understanding animal movement and the drivers influencing their relationship with the environment. My interest further lies in the complexities of animal ecology, particularly predator-prey dynamics and human-wildlife interactions. Currently, I am engaged in a project that aims to understand the intricate dynamics between deer movement and human activities in increasingly urbanized landscapes. I hold a PhD in Wildlife Sciences from the Wildlife Institute of India and the Forest Research Institute, where my doctoral research focused on the movement ecology of tigers in a human-dominated landscape in India. My journey into wildlife research has been diverse, from studying small mammals to large carnivores in varied landscapes.
+
+
 ## Graduate Students
 
 ![](images/people/dan_herrera.jpg){width=40%}
