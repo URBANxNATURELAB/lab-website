@@ -19,6 +19,8 @@ d-title, d-byline {
 
 Authors that are <u>**bold and underlined**</u> indicate URBANxNATURE Lab members
 
+**<u>Palomo-Munoz, G.</u>**, M Fidino, TJ Werdel, CW Piper, **<u>T Gallo</u>**, MS Peek, AM Ricketts, and AA Ahlers. 2024. Mesopredators Have Differing Influences on Prey Habitat Use and Diel Activity in a Multipredator Landscape. Ecosphere 15(9): e70006. [PDF](publications/Ecosphere-2024-Palomo‐Munoz.pdf)
+
 **<u>Collins, M.K.</u>**, **<u>T. Gallo</u>**. 2024. Legacy effects of housing segregation on urban mammal communities in Washington, D.C., USA. Urban Ecosystems. [PDF](publications/Collins_Gallo_2024.pdf)
 
 **<u>Herrera, D.J.</u>**, M. Fidino, D. Luther, J.M. Mullinax, **<u>T. Gallo</u>**. 2024. Historical park planning is associated with modern-day patterns of bird diversity in cities. Landscape and Urban Planning, 249, 105132. [PDF](publications/Herrera_etal_2024_LAND.pdf)
