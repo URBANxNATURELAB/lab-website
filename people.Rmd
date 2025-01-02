@@ -46,16 +46,6 @@ I am a postdoctoral researcher interested in understanding animal movement and t
 
 ## Graduate Students
 
-![](images/people/dan_herrera.jpg){width=40%}
-
-### Dan Herrera, Ph.D. Candidate
-
-[Dan's personal website](https://www.herrerawildlife.com/)
-
-I am a graduate student in Environmental Science and Technology at the University of Maryland. My research experience has broadly focused on animal behavior and urban ecology. During the winter of 2017 and summer of 2018, I worked with Dr. Gallo at the Urban Wildlife Institute in Chicago, IL. I have since moved to Washington, DC, to survey the Capitol’s wildlife through a collaboration between the Humane Rescue Alliance and the Smithsonian Conservation Biology Institute. I am thrilled to continue working with Dr. Gallo as we use these data to better understand wildlife response to urbanization on a fine scale. I am interested in dynamic interactions between the anthropogenic and natural landscapes that influence urban wildlife, and the resulting potential human-wildlife conflict.
-
-<br>
-
 ![](images/people/adampekor.jpeg){width=40%}
 
 ### Adam Pekor, Ph.D. Student
@@ -89,16 +79,18 @@ I am a graduate student in Environmental Science and Technology at the Universit
 
 ## Undergraduate Students
 
-![](images/people/Abdullah.png){width=40%}
+![](images/people/jishan-2.jpg){width=40%}
 
 ### Jishan Chowdhury, Research Assistant
 
-I am an undergrad student in the Environmental Science And Technology program at the University Of Maryland with a concentration in Ecological Tech Design. I have always been very passionate about the environment and how humans affect the environment. My dream is to see an environmentally friendly world.
+I am an undergraduate student in the Environmental Science and Technology program at the University of Maryland, specializing in Ecological Tech Design. With over two years of experience in research as part of this lab, I am particularly interested in studying urban wildlife and human interactions within these ecosystems. Through my work on wildlife monitoring, I aim to contribute to a deeper understanding of how urban environments can coexist harmoniously with nature.
 
 
 ## Lab Alumni
 
 ### Graduate Students:
+
+**Dan Herrera** - Ph.D. (2020-2024). Currently at North Carolina Museum of Natural Sciences
 
 **Merri Collins** - Ph.D. (2020-2024). Currently at Appalachian Headwaters
 
