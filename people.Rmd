@@ -27,15 +27,6 @@ Travis Gallo is an Assistant Professor in Urban Ecology and Conservation and is 
 
 ## Postdoctoral Scholars
 
-![](images/people/gabby.jpeg){width=40%}
-
-### Gabby Palomo, Postdoctoral Researcher
-
-[Gabby's personal website](https://gabspalomo.github.io/)
-
-I am a postdoctoral researcher working on a 2-year research project to understand potential areas of interactions between humans and white-tailed deer using camera traps and human mobility data across multiple US cities. Deer are a species of interest in understanding spillover risk between humans and wildlife since multiple studies have identified SARS-CoV-2 infections in white-tailed deer. I got my PhD from the University of Nebraska Lincoln in 2022, working with Andrew J Tyre (advisor). My background is in carnivore ecology, specifically ocelot populations in Guatemala. I am interested in studying the impacts of human activities on wildlife and their effects on population dynamics, behavior, and wildlife-habitat relationships. However, I spend so much time learning about Bayesian models that I'm starting to question my priors in ecology. I'm originally from Guatemala and have previously worked in natural history collections, teaching undergraduate-level classes, and orchid and bromeliad horticulture. 
-
-<br>
 
 ![](images/people/zehidul_hussain.jpg){width=40%}
 
@@ -95,6 +86,9 @@ I am an undergraduate student pursuing a dual degree in the Environmental Scienc
 
 
 ## Lab Alumni
+
+### Postdoctoral Scholars
+**Gabby Palomo** (2022-2024)
 
 ### Graduate Students:
 
