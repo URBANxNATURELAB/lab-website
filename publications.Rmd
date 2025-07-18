@@ -19,6 +19,10 @@ d-title, d-byline {
 
 Authors that are <u>**bold and underlined**</u> indicate URBANxNATURE Lab members
 
+**<u>Hussain Z</u>**, **<u>G Palomo-Munoz</u>**, T Anderson, JM Mullinax, AA Roess, **<u>T Gallo</u>**. 2025. Navigating the urban landscape: Integrating animal movement ecology with the One Health framework to better understand urban ecosystems. BioScience, biaf082 [PDF](publications/Hussain_etal_2025_Bioscience.pdf)
+
+East, AG, M Simini, EE Stricklin, GR Lotufo, JL Guelfo, Z Yang, **<u>T Gallo</u>**, MJ Quinn, RG Kuperman. 2025. Dietary kinetics of a PFAS mixture in the American toad (Anaxyrus americanus); laboratory insights into trophic transfer of PFAS. Environmental Toxicology and Chemistry, vgaf180
+
 S.A. Peters, **<u>T. Gallo</u>**, J. Mullinax, A. Roess, **<u>G. Palomo-Munoz</u>**, T. Anderson. 2025 Integrating human mobility and animal movement data reveals complex space-use between humans and white-tailed deer in urban environments. Scientific Reports 15:18588 [PDF](publications/Peters_et_al_SciReport.pdf)
 
 J Hewitt, G Wilson-Henjum, JC Chandler, AT Phillips, DG Diel, WD Walter, A Baker, J Høy-Petersen, G Bastille-Rousseau, T Kishimoto, G Wittemyer, J Alder, S Hathaway, KR Manlove, **<u>T Gallo</u>**, J Mullinax, **<u>C Coriell</u>**, **<u>M Payne</u>**, ME Craft, TJ Garwood, TM Wolf, MA Diuk-Wasser, MC VanAcker, L Dudley Plimpton, MQ Wilber, D Grove, J Koseiwska, LI Muller, KM Pepin. 2025. Evaluation of SARS-CoV-2 antibody detection methods for wild Cervidae. Preventive Veterinary Medicine. 106522
