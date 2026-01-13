@@ -19,9 +19,11 @@ d-title, d-byline {
 
 Authors that are <u>**bold and underlined**</u> indicate URBANxNATURE Lab members
 
-**<u>Herrera, D</u>**, **<u>L Abedin</u>**, **<u>G Palomo</u>**, **<u>M Collins</u>** **<u>J Chowdhury</u>**, **<u>K Shires</u>**, **<u>T Gallo</u>**. 2025. Reduced visibility and audibility prompt anti-predator behavior even in a relatively predator-free environment. Animal Behaviour. In Press
-
 **<u>Pekor, A.</u>**, I. Jansson, O. Munka, W.O. Seki, S. Capper, B. Kissui, G. Bostedt, C. Sandström, D. Rentsch, **<u>T. Gallo</u>**. 2025. Using incentive payments to promote human-carnivore coexistence. Conservation Biology. In Press
+
+Young J, R Kays, AM Green, RJ Moll, JT Schultz, JF Benson, S Benson-Amram, J Brown, G Cahal, BS Carr, JD Cepek, E Davis, KD Dougherty, **<u>T Gallo</u>**, SD Gehrt, KO Goode, T Grace, M Henling, L Hines, S Keller, MT Kohl, S LaPoint, J Monzón, C Nagy, E Palmer, LR Prugh, S Raber, K Ritzel, SPD Riley, CJ Schell, C Şekercioğu, L Stanton, SW Breck. 2026. Neophobia in urban and rural coyotes across the USA. Scientific Reports. In Press
+
+**<u>Herrera, D</u>**, **<u>L Abedin</u>**, **<u>G Palomo</u>**, **<u>M Collins</u>** **<u>J Chowdhury</u>**, **<u>K Shires</u>**, **<u>T Gallo</u>**. 2025. Reduced visibility and audibility prompt anti-predator behavior even in a relatively predator-free environment. Animal Behaviour 23 123420 [PDF](publications/herrera_etal_2026.pdf)
 
 **<u>Collins, M.</u>**, K. Edwards. S. Bates, **<u>T. Gallo</u>**. 2025. Returning Neighbors: Elevation and Distance to Roadways Influence Eastern Wild Turkey (Meleagris gallopavo silvestris) Occupancy in an Urban Landscape. Journal of Wildlife Management. e70129 [PDF](publications/Collins_2025.pdf)
 
