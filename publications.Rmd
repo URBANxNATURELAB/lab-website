@@ -19,6 +19,8 @@ d-title, d-byline {
 
 Authors that are <u>**bold and underlined**</u> indicate URBANxNATURE Lab members
 
+**<u>J Nadler</u>**, **<u>DJ Herrera</u>**, **<u>G Palomo</u>**, **<u>C O’Donnell</u>**, **<u>A Pekor</u>**, **<u>Z Hussain</u>**, **<u>S Hussain</u>**, **<u>T Gallo</u>**. 2026. Hyper-local social and ecological factors correlate with public tree distributions across Washington, DC: Implications for equitable ecosystem service provisioning. Urban Forestry & Urban Greening. 118:129349 [PDF](publications/nadler_etal_2026.pdf)
+
 **<u>Pekor, A.</u>**, I. Jansson, O. Munka, W.O. Seki, S. Capper, B. Kissui, G. Bostedt, C. Sandström, D. Rentsch, **<u>T. Gallo</u>**. 2026. Using incentive payments to promote human-carnivore coexistence. Conservation Biology. e70216 [PDF](publications/ConservationBiology-2026-Pekor.pdf)
 
 **<u>Herrera, D</u>**, **<u>L Abedin</u>**, **<u>G Palomo</u>**, **<u>M Collins</u>** **<u>J Chowdhury</u>**, **<u>K Shires</u>**, **<u>T Gallo</u>**. 2025. Reduced visibility and audibility prompt anti-predator behavior even in a relatively predator-free environment. Animal Behaviour 23 123420 [PDF](publications/herrera_etal_2026.pdf)
