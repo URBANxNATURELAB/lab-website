@@ -27,11 +27,13 @@ My (Travis) teaching philosophy can be summed up in three words: inclusive, equa
 
 ### Classes that Travis Teaches:
 
-**ENST 499T/698T: Data Management & Analyses for Environmental Science** (Spring)
+**ENST 361: Urban Environmental Science** (Fall semesters)
 
-**ENST 499A: Urban Ecology** (Coming Fall 2024, Fall moving forward)
+**ENST 321: Statistics for Environmental Science** (each semester)
 
 **ENST 699L: Hierarchical Modeling for Environmental Science** (Spring on even years)
+
+**ENST 499T/698T: Data Management & Analyses for Environmental Science** (on hold)
 
 Travis has also taught courses in Conservation Biology, Applied Ecology, and Principles of Wildlife Management. Please reach out if any course materials may be beneficial to you.
 
