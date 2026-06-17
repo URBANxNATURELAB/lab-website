@@ -19,6 +19,8 @@ d-title, d-byline {
 
 Authors that are <u>**bold and underlined**</u> indicate URBANxNATURE Lab members
 
+**<u>Gallo, T.</u>**, M. Fidino, C.J. Schell, M.D. Hendrix, S.B. Magle. 2026. Legacy effects of redlining on the distribution of greenspaces in US cities. Frontiers in Ecology and the Environment. e70056 [PDF](publications/Frontiers_in_Ecol_Environ-2026-Gallo.pdf)
+
 **<u>J Nadler</u>**, **<u>DJ Herrera</u>**, **<u>G Palomo</u>**, **<u>C O’Donnell</u>**, **<u>A Pekor</u>**, **<u>Z Hussain</u>**, **<u>S Hussain</u>**, **<u>T Gallo</u>**. 2026. Hyper-local social and ecological factors correlate with public tree distributions across Washington, DC: Implications for equitable ecosystem service provisioning. Urban Forestry & Urban Greening. 118:129349 [PDF](publications/nadler_etal_2026.pdf)
 
 **<u>Pekor, A.</u>**, I. Jansson, O. Munka, W.O. Seki, S. Capper, B. Kissui, G. Bostedt, C. Sandström, D. Rentsch, **<u>T. Gallo</u>**. 2026. Using incentive payments to promote human-carnivore coexistence. Conservation Biology. e70216 [PDF](publications/ConservationBiology-2026-Pekor.pdf)
