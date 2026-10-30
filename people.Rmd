@@ -52,19 +52,11 @@ I am a graduate student in Environmental Science and Technology at the Universit
 
 ## Undergraduate Students
 
-![](images/people/jishan-2.jpg){width=40%}
+![](images/people/Ahmed.jpeg){width=40%}
 
-### Jishan Chowdhury, Research Assistant
+### Ahmed Elsamani, Research Assistant
 
-I am an undergraduate student in the Environmental Science and Technology program at the University of Maryland, specializing in Ecological Tech Design. With over two years of experience in research as part of this lab, I am particularly interested in studying urban wildlife and human interactions within these ecosystems. Through my work on wildlife monitoring, I aim to contribute to a deeper understanding of how urban environments can coexist harmoniously with nature.
-
-<br>
-
-![](images/people/beck.jpg){width=40%}
-
-### Beck Fishell, Research Assistant
-
-I am an undergraduate student pursuing a dual degree in the Environmental Science and Policy program as well as the Anthropology program at the University of Maryland. I have a particular interest in human-wildlife interactions, specifically the conjunction of culture and wildlife integration within urban settings, as well as native-alien interactions for wildlife in human-centered environments. Through this research, I hope to bring understanding on how wildlife interact within urban settings and help yield inspiration for plans to encourage biodiversity in these urban environments.
+I am an undergraduate student in the University of Maryland's Public Health Science program, pursuing a career in the medical field. My research focuses on urban wildlife and human interactions within ecosystems in the DC metro area. Through this work, I will study interactions and space use among deer, foxes, and coyotes across Maryland and Washington, D.C. I hope this research will deepen understanding of about human-wildlife interactions and help minimize zoonotic disease risk.
 
 
 ## Lab Alumni
